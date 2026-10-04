@@ -3,36 +3,37 @@
 Instaladores do JayV para Windows, macOS e Linux. Quem já tem o JayV instalado recebe as versões novas pela atualização automática do próprio aplicativo.
 
 
-## Versão mais recente: v0.51.2
+## Versão mais recente: v0.51.3
 
-Publicada em 2026-10-04 · [notas da versão](https://github.com/JayV-Coder/jayv-coder-releases/releases/tag/v0.51.2)
+Publicada em 2026-10-04 · [notas da versão](https://github.com/JayV-Coder/jayv-coder-releases/releases/tag/v0.51.3)
 
 ### Windows
 
 | Pacote | Arquivo | Tamanho |
 | --- | --- | --- |
-| Instalador (.exe) | [JayV_0.51.2_x64-setup.exe](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_x64-setup.exe) | 7.3 MB |
-| MSI (.msi) | [JayV_0.51.2_x64_en-US.msi](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_x64_en-US.msi) | 10.5 MB |
+| Instalador (.exe) | [JayV_0.51.3_x64-setup.exe](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_x64-setup.exe) | 7.4 MB |
+| MSI (.msi) | [JayV_0.51.3_x64_en-US.msi](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_x64_en-US.msi) | 10.7 MB |
 
 ### macOS
 
 | Pacote | Arquivo | Tamanho |
 | --- | --- | --- |
-| Apple Silicon (.dmg) | [JayV_0.51.2_aarch64.dmg](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_aarch64.dmg) | 9.7 MB |
-| Intel (.dmg) | [JayV_0.51.2_x64.dmg](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_x64.dmg) | 10.2 MB |
+| Apple Silicon (.dmg) | [JayV_0.51.3_aarch64.dmg](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_aarch64.dmg) | 9.9 MB |
+| Intel (.dmg) | [JayV_0.51.3_x64.dmg](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_x64.dmg) | 10.4 MB |
 
 ### Linux
 
 | Pacote | Arquivo | Tamanho |
 | --- | --- | --- |
-| AppImage | [JayV_0.51.2_amd64.AppImage](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_amd64.AppImage) | 85.8 MB |
-| Debian/Ubuntu (.deb) | [JayV_0.51.2_amd64.deb](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_amd64.deb) | 12.0 MB |
-| Fedora/RHEL (.rpm) | [JayV-0.51.2-1.x86_64.rpm](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV-0.51.2-1.x86_64.rpm) | 12.0 MB |
+| AppImage | [JayV_0.51.3_amd64.AppImage](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_amd64.AppImage) | 86.0 MB |
+| Debian/Ubuntu (.deb) | [JayV_0.51.3_amd64.deb](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_amd64.deb) | 12.2 MB |
+| Fedora/RHEL (.rpm) | [JayV-0.51.3-1.x86_64.rpm](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV-0.51.3-1.x86_64.rpm) | 12.2 MB |
 
 ## Todas as versões
 
 | Versão | Data | Windows | macOS | Linux |
 | --- | --- | --- | --- | --- |
+| [v0.51.3](https://github.com/JayV-Coder/jayv-coder-releases/releases/tag/v0.51.3) | 2026-10-04 | [Instalador (.exe)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_x64-setup.exe)<br>[MSI (.msi)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_x64_en-US.msi) | [Apple Silicon (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_aarch64.dmg)<br>[Intel (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_x64.dmg) | [AppImage](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_amd64.AppImage)<br>[Debian/Ubuntu (.deb)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV_0.51.3_amd64.deb)<br>[Fedora/RHEL (.rpm)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.3/JayV-0.51.3-1.x86_64.rpm) |
 | [v0.51.2](https://github.com/JayV-Coder/jayv-coder-releases/releases/tag/v0.51.2) | 2026-10-04 | [Instalador (.exe)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_x64-setup.exe)<br>[MSI (.msi)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_x64_en-US.msi) | [Apple Silicon (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_aarch64.dmg)<br>[Intel (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_x64.dmg) | [AppImage](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_amd64.AppImage)<br>[Debian/Ubuntu (.deb)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV_0.51.2_amd64.deb)<br>[Fedora/RHEL (.rpm)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.2/JayV-0.51.2-1.x86_64.rpm) |
 | [v0.51.1](https://github.com/JayV-Coder/jayv-coder-releases/releases/tag/v0.51.1) | 2026-10-04 | [Instalador (.exe)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.1/JayV_0.51.1_x64-setup.exe)<br>[MSI (.msi)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.1/JayV_0.51.1_x64_en-US.msi) | [Apple Silicon (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.1/JayV_0.51.1_aarch64.dmg)<br>[Intel (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.1/JayV_0.51.1_x64.dmg) | [AppImage](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.1/JayV_0.51.1_amd64.AppImage)<br>[Debian/Ubuntu (.deb)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.1/JayV_0.51.1_amd64.deb)<br>[Fedora/RHEL (.rpm)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.1/JayV-0.51.1-1.x86_64.rpm) |
 | [v0.51.0](https://github.com/JayV-Coder/jayv-coder-releases/releases/tag/v0.51.0) | 2026-10-04 | [Instalador (.exe)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.0/JayV_0.51.0_x64-setup.exe)<br>[MSI (.msi)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.0/JayV_0.51.0_x64_en-US.msi) | [Apple Silicon (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.0/JayV_0.51.0_aarch64.dmg)<br>[Intel (.dmg)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.0/JayV_0.51.0_x64.dmg) | [AppImage](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.0/JayV_0.51.0_amd64.AppImage)<br>[Debian/Ubuntu (.deb)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.0/JayV_0.51.0_amd64.deb)<br>[Fedora/RHEL (.rpm)](https://github.com/JayV-Coder/jayv-coder-releases/releases/download/v0.51.0/JayV-0.51.0-1.x86_64.rpm) |
