@@ -1,6 +1,24 @@
 {
-  "version": "0.63.0",
+  "version": "0.64.0",
   "releases": [
+    {
+      "version": "0.64.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "repositoriesFromSite",
+          "title": "Repositories come from the site",
+          "detail": "The owner now links the organization's repositories on the JayV site, by signing in to GitHub, GitLab or Bitbucket, and they show up in the app by themselves. The field to paste a repository URL left the app."
+        },
+        {
+          "kind": "feature",
+          "id": "folderCompare",
+          "title": "Find clones looks at the whole folder",
+          "detail": "Find clones now searches the organization folder at any depth and compares it with the repositories on the site: what is already there, what is missing (clone one or all at once) and the clones that are not in the organization."
+        }
+      ]
+    },
     {
       "version": "0.63.0",
       "date": "2026-10-05",
