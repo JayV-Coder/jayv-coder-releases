@@ -1,0 +1,1199 @@
+{
+  "version": "0.63.0",
+  "releases": [
+    {
+      "version": "0.63.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "profilePhoto",
+          "title": "Your profile photo, whatever way you sign in",
+          "detail": "The photo you choose and crop in your account on the JayV site now shows in the app, whether you sign in with email and password or with a linked account. Removing it brings back the photo of your linked account."
+        },
+        {
+          "kind": "feature",
+          "id": "onlineManual",
+          "title": "Documentation and release notes on the site",
+          "detail": "Every feature and command of JayV now has a page in the Documentation on the site, and the Release notes page lists everything each version brought, updated with every release."
+        },
+        {
+          "kind": "fix",
+          "id": "updatesViaServer",
+          "title": "Updates come through JayV's server",
+          "detail": "The app now checks for and downloads new versions through JayV's own server instead of going straight to the releases repository."
+        }
+      ]
+    },
+    {
+      "version": "0.62.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "parallelRequests",
+          "title": "Requests from different projects run at the same time",
+          "detail": "When your plan allows more than one request at a time, chats from different projects no longer wait for each other: each runs with its own agents and its own index. Requests in the same project still go one at a time, so two agents never write to the same folder at once."
+        },
+        {
+          "kind": "feature",
+          "id": "planLive",
+          "title": "The plan appears while it is written",
+          "detail": "When a reasoning model plans a complex build first, each line of the plan shows up in the progress panel as soon as it is written."
+        },
+        {
+          "kind": "fix",
+          "id": "lightWorkspace",
+          "title": "Lighter loading of your chats",
+          "detail": "The app now loads the list of chats without their conversations and reads each conversation only when you open it."
+        }
+      ]
+    },
+    {
+      "version": "0.61.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "progressPanel",
+          "title": "Progress panel beside the chat",
+          "detail": "What JayV is doing now moved from above the message box to a panel on the left, next to the side menu, with each step on its own line. The repositories of an organization chat live in the same panel, so the conversation gets the full width and the bubble keeps only the answer. The panel can be collapsed to a thin strip."
+        },
+        {
+          "kind": "feature",
+          "id": "stopButton",
+          "title": "Stop takes the place of Send while JayV works",
+          "detail": "While a request is actually running, the round Send button turns into a Stop button. Enter still queues a new message."
+        },
+        {
+          "kind": "fix",
+          "id": "liveEditor",
+          "title": "Live follow in your editor answers right away",
+          "detail": "Choosing VS Code, Cursor or Windsurf in the Live panel now opens the file you are looking at there at once, or says that the first changed file will open. When no editor command is found, the panel says so instead of staying silent. Errors from opening the editor are shown."
+        }
+      ]
+    },
+    {
+      "version": "0.60.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "requiredFeatures",
+          "title": "Protections your plan keeps on",
+          "detail": "The entry and exit gates, secret redaction, protected files, agent sessions, the context cache and adaptive routing are part of every plan and no longer switch off. Your plan can also lock an optional feature on, and its switch shows why it cannot be changed."
+        },
+        {
+          "kind": "feature",
+          "id": "stopRequest",
+          "title": "Stop a request",
+          "detail": "A Stop button ends the running request and closes every process the agent opened; what it already said stays in the chat. A request waiting in the queue can be removed from it, and every request stops at a time limit you set in Settings › Jev (30 minutes by default)."
+        },
+        {
+          "kind": "feature",
+          "id": "protectedFiles",
+          "title": "Protected files stay protected",
+          "detail": "Claude Code can no longer read or edit the files in your protected list, and any change an agent makes to one of them is held at the exit gate, even when the answer does not mention it."
+        },
+        {
+          "kind": "feature",
+          "id": "backgroundReview",
+          "title": "The second opinion arrives after the answer",
+          "detail": "The review by another agent now runs after the answer is in, only for medium and complex requests, and lands in the same chat. The next request no longer waits for it."
+        },
+        {
+          "kind": "fix",
+          "id": "fasterRequests",
+          "title": "Requests start faster",
+          "detail": "Agents are no longer rebuilt and searched for on disk before every request, projects you switch between keep their index and only changed files are read again, and a chat that changes reloads alone instead of every conversation."
+        },
+        {
+          "kind": "fix",
+          "id": "agentLogin",
+          "title": "Signed-out agents are skipped",
+          "detail": "An agent that is not signed in leaves routing instead of failing each request, and checking an agent in Settings shows whether it is signed in."
+        },
+        {
+          "kind": "fix",
+          "id": "offlineQueue",
+          "title": "The queue keeps going without the server",
+          "detail": "With a valid session, requests run even when the JayV server cannot be reached, using the local gate. Sync waits while a request is running instead of competing with it."
+        },
+        {
+          "kind": "fix",
+          "id": "agentFlags",
+          "title": "Agent command lines that always work",
+          "detail": "Claude Code gains the Never ask mode and no longer waits for an approval nobody can give. Planning, review and chat names no longer leave saved sessions behind, and Copilot's clean output and Codex outside Git are always on."
+        }
+      ]
+    },
+    {
+      "version": "0.59.1",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "liveClaudeText",
+          "title": "Claude's answer appears while it is written",
+          "detail": "Claude Code's reply now grows on the screen token by token instead of showing up only when each message ends. The saved answer is the same as before, and the pieces reach the screen in small batches so long answers do not slow the window down."
+        },
+        {
+          "kind": "fix",
+          "id": "gateDeadline",
+          "title": "The gatehouse no longer holds a request for minutes",
+          "detail": "The entry gate and the routing wait for the Jev at most a few seconds, with one retry, and then decide with the local heuristics. After three failures in a row the app stops waiting for the Jev for five minutes, and a call the app retries counts only once in the daily limit."
+        },
+        {
+          "kind": "fix",
+          "id": "agentOutput",
+          "title": "Steadier conversations with the agents",
+          "detail": "A Codex session that no longer exists starts a new one instead of failing; a line outside UTF-8 no longer breaks the request; a long request no longer locks up an agent that writes a lot before reading it; the backup agent takes over even after a long plan; and Claude's internal status events no longer repeat \"agent started\" in the timeline."
+        },
+        {
+          "kind": "fix",
+          "id": "projectIndex",
+          "title": "The project index follows .gitignore",
+          "detail": "Ignored files, virtual environments and build folders stay out of the context, and the read budget goes to code first: a large .venv or coverage folder no longer pushes the project's source out of the index."
+        },
+        {
+          "kind": "fix",
+          "id": "instantDelete",
+          "title": "Deleting or clearing a chat answers at once",
+          "detail": "Clearing a chat, deleting it or deleting a project no longer waits for the request another chat is running."
+        }
+      ]
+    },
+    {
+      "version": "0.59.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "benchRounds",
+          "title": "jayv bench measures rounds until done",
+          "detail": "The command-line benchmark now runs a task file: each task has a beginner's script and a command that tells when it is done. JayV and the agent alone each work in their own copy of the project, in alternating order, with the gatehouse on for JayV, and the result is how many requests and how many dollars each side needed. An example with ten tasks comes in src-tauri/bench."
+        }
+      ]
+    },
+    {
+      "version": "0.58.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "planToBuild",
+          "title": "The build gets the whole plan",
+          "detail": "When you plan in a chat and then ask to implement, the agent that builds now receives the plan in full. Before, a new session only saw the start of it, because old answers are shortened in the history."
+        },
+        {
+          "kind": "feature",
+          "id": "betterRetry",
+          "title": "\"It didn't work\" no longer retries the same way",
+          "detail": "A complaint about the last answer now tells the agent to check what its previous change did and reproduce the failure before changing anything again. From the second complaint in a row, it also thinks one step harder."
+        },
+        {
+          "kind": "fix",
+          "id": "smallCuts",
+          "title": "Searches in your language, cheaper titles and honest savings",
+          "detail": "Requests written in Portuguese or Spanish now find code written in English, because common programming words are searched in English too. With only Copilot set up, chats keep the local title instead of spending a premium request on it. And a blocked request you resend within 15 minutes no longer counts as tokens saved."
+        }
+      ]
+    },
+    {
+      "version": "0.57.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "sessionModel",
+          "title": "A chat stays on its model, so the agent resumes",
+          "detail": "Picking a model by the size of every request meant a new agent session almost every time, and each new session reads the project again. Now the first request picks the model and the next ones stay on it, unless a complex request needs a bigger one. Effort still follows each request. You can turn this off in Settings › Jev › Routing."
+        },
+        {
+          "kind": "feature",
+          "id": "sessionsKept",
+          "title": "Agent sessions survive a restart, and Codex resumes too",
+          "detail": "The agent session of each chat is now saved on this computer for a day, so closing and opening JayV no longer starts every chat from scratch. Codex resumes its session as Claude already did, and a resumed request no longer repeats the system instructions. Resuming across planning and build is available as an experimental option in Settings › Jev › Routing."
+        }
+      ]
+    },
+    {
+      "version": "0.56.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "gateAsks",
+          "title": "The gatehouse asks you itself, before any agent runs",
+          "detail": "When a request is cleared with reservations, the gatehouse no longer pays an agent session just to ask a question. It shows what is missing and offers three ways out: send as written, send the version JayV rewrote with instructions for the gaps, or complete the request. The first two go straight to the agent, and can build."
+        },
+        {
+          "kind": "feature",
+          "id": "followUps",
+          "title": "Follow-ups keep the pass of the request they continue",
+          "detail": "A short message right after an answer, such as \"go ahead\", \"implement it\" or \"it still fails\", is now read as part of the conversation: it keeps the gatehouse verdict of the request it continues, so it can go to build mode instead of turning into another question. With the Jev on, the gatehouse also reads the last messages of the chat."
+        }
+      ]
+    },
+    {
+      "version": "0.55.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "roundMetrics",
+          "title": "JayV counts why an agent starts over",
+          "detail": "Every time an agent opens a fresh session instead of resuming the chat's, JayV now records why: first request, another model, another mode, the turn limit, or a session the agent no longer had. Together with the gate verdicts and the cost per chat, this is the baseline for the next releases, which aim at fewer rounds until a request is done."
+        }
+      ]
+    },
+    {
+      "version": "0.54.0",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "questionSteps",
+          "title": "Several questions from the agent, one step at a time",
+          "detail": "When the agent asks more than one question, they now come one per step, with Previous and Next and a marker showing where you are (2 of 4). Everything you answered goes together on the last step."
+        },
+        {
+          "kind": "feature",
+          "id": "questionFold",
+          "title": "Collapse the agent's questions",
+          "detail": "The question panel above the message box folds into one line so you can read the chat, and opens again with a click. Answers to several questions also show folded in the chat."
+        },
+        {
+          "kind": "fix",
+          "id": "codexNetwork",
+          "title": "Codex network access can be turned on again",
+          "detail": "In Settings › Agents › Codex the Network access switch stayed locked with the default \"Read only\" sandbox, and Development mode dropped it even when it was on. It now works with \"Read only\" and \"Write to the project\" and applies whenever Codex writes; with Full access it shows on, because there is no sandbox."
+        }
+      ]
+    },
+    {
+      "version": "0.53.0",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgAdminOnSite",
+          "title": "Organizations managed on the site",
+          "detail": "Creating organizations, inviting members and the LLM policy moved to the dashboard on the JayV site. The app keeps members, repositories, projects and the policy in force."
+        },
+        {
+          "kind": "feature",
+          "id": "orgSettingsOnSite",
+          "title": "Organization settings on the site",
+          "detail": "Renaming, leaving and deleting an organization moved to the dashboard on the JayV site, next to invites and the LLM policy."
+        },
+        {
+          "kind": "feature",
+          "id": "accountOnSite",
+          "title": "Account settings on the site",
+          "detail": "Personal data, password, authenticator app and linked accounts moved to the dashboard on the JayV site, for every account. The Profile page keeps your level, activity and agent quotas."
+        },
+        {
+          "kind": "feature",
+          "id": "adminOnSite",
+          "title": "Administration only on the site",
+          "detail": "The Administration page left the app: features, plans and users are managed in the dashboard on the JayV site."
+        }
+      ]
+    },
+    {
+      "version": "0.52.4",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "planSessionInBuild",
+          "title": "The agent no longer stays read-only after planning",
+          "detail": "When a chat went from Planning to Development, the agent picked up the session it had opened in Planning, kept its read-only permission and answered that the session was still read-only. A request in Development now opens its own agent session, and the next requests in the same mode pick it up as before."
+        }
+      ]
+    },
+    {
+      "version": "0.52.3",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "featureStatsPlans",
+          "title": "Statistics and Plans in their own folders",
+          "detail": "An internal change with no difference in use: the Statistics and Plans pages now each keep their screens in a folder of their own, like the System page."
+        }
+      ]
+    },
+    {
+      "version": "0.52.2",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "featureSystem",
+          "title": "The System page in its own folder",
+          "detail": "An internal change with no difference in use: the System page now keeps its logic, screens and tests in one folder, the first step in organizing the screens by feature."
+        }
+      ]
+    },
+    {
+      "version": "0.52.1",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coreOrchestration",
+          "title": "The whole core in separate parts",
+          "detail": "An internal change with no difference in use: Jev's orchestration, which takes the request, builds the context, picks the agent and reviews the result, became the last part of its own in the core. Every layer is now built and tested separately."
+        }
+      ]
+    },
+    {
+      "version": "0.52.0",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "agentMechanisms",
+          "title": "Web search and other tools per agent",
+          "detail": "Settings › Agents has a \"What the agent can do\" list for Claude Code, Codex and Copilot: web search, opening pages, running commands and GitHub tools, each only where the agent's command line supports it. Web search now comes on by default. Organizations can block each one in the LLM policy."
+        },
+        {
+          "kind": "feature",
+          "id": "thoughtsCollapsed",
+          "title": "What the agent said along the way stays collapsed",
+          "detail": "In JayV's bubble, only the latest message the agent wrote while working shows above the answer. A button opens the earlier ones."
+        },
+        {
+          "kind": "fix",
+          "id": "unsavedAbove",
+          "title": "\"Unsaved changes\" no longer pushes the buttons",
+          "detail": "In Settings, the notice appeared beside the buttons and pushed them down. It now sits above them, in a space that is always there."
+        }
+      ]
+    },
+    {
+      "version": "0.51.7",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coreWorkspaceLive",
+          "title": "Projects, chats and Live in separate parts",
+          "detail": "An internal change with no difference in use: projects, chats and the request queue, and also the Live panel, became parts of their own in the core, built and tested separately."
+        }
+      ]
+    },
+    {
+      "version": "0.51.6",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coreCodeMemory",
+          "title": "Code index and memory in separate parts",
+          "detail": "An internal change with no difference in use: the code index and search, the symbols, the project map and the memory of chats and notes became parts of their own in the core, built and tested separately."
+        }
+      ]
+    },
+    {
+      "version": "0.51.5",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coreJevPlansOrgs",
+          "title": "Jev, plans and organizations in separate parts",
+          "detail": "An internal change with no difference in use: Jev's gate, the plan features and the organization repositories became parts of their own in the core, built and tested separately."
+        }
+      ]
+    },
+    {
+      "version": "0.51.4",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "interruptedNotResumed",
+          "title": "A request cut off by closing the app does not restart by itself",
+          "detail": "When the app reopened, the request that was running went back to the queue and ran again from scratch, even a half-done build in a folder already changed. Now it shows as failed, with the reason, and resending is one click away. Requests that were only waiting their turn stay in the queue."
+        },
+        {
+          "kind": "fix",
+          "id": "indexAfterBuild",
+          "title": "Search sees what the agent just created",
+          "detail": "The project index was read once and did not change after an agent edited files in Development mode: new files stayed out of search, the map and the symbols. Now, after each Development request, the folder is read again for the next request."
+        },
+        {
+          "kind": "fix",
+          "id": "settingsWhileWorking",
+          "title": "Settings and System open while an agent works",
+          "detail": "Both pages stayed on \"Loading…\" until the running request finished. Now they open right away; what you save while the agent works applies from the next request."
+        },
+        {
+          "kind": "fix",
+          "id": "policyAcrossOrgs",
+          "title": "A project in two organizations follows the stricter policy",
+          "detail": "A project with repositories from two organizations used only the LLM policy of the first one. Now all of them apply together, whichever is stricter: only the agents every one allows, the privacy patterns of all and the toughest exit rule of each."
+        },
+        {
+          "kind": "fix",
+          "id": "titlesWithCli",
+          "title": "Chat titles with command-line agents too",
+          "detail": "With no API model set up, the chat kept the first words of the request as its title. Now the command-line agent names it, on its cheapest model and read-only: one short call, once per chat, without holding up the next request in the queue."
+        }
+      ]
+    },
+    {
+      "version": "0.51.3",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coreCloudAgents",
+          "title": "Cloud and agents in separate parts",
+          "detail": "An internal change with no difference in use: the connection to the server and everything that talks to the agents and models became parts of their own in the core, built and tested separately."
+        }
+      ]
+    },
+    {
+      "version": "0.51.2",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coreCrates",
+          "title": "Core foundation in separate parts",
+          "detail": "An internal change with no difference in use: texts, configuration, network security and the app's local database became parts of their own in the core, built and tested separately."
+        }
+      ]
+    },
+    {
+      "version": "0.51.1",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coreLayers",
+          "title": "Core organized in layers",
+          "detail": "An internal change with no difference in use: the parts of the app's core no longer depend on each other in circles. It is the first step toward building and fixing each feature separately."
+        }
+      ]
+    },
+    {
+      "version": "0.51.0",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "plans",
+          "title": "Plans and subscription",
+          "detail": "The new Plans page shows what each plan includes and subscribes through Stripe. Anyone without a subscription stays on the free plan, with everything they already used."
+        },
+        {
+          "kind": "feature",
+          "id": "adminFeatures",
+          "title": "Features controlled by the administrator",
+          "detail": "Organizations, statistics, gatehouse board, live files, search, project notes and Jev's advanced options can now be turned on or off by the system administrator and included in each plan."
+        }
+      ]
+    },
+    {
+      "version": "0.50.1",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "queueUnstuck",
+          "title": "The request queue no longer gets stuck",
+          "detail": "Clearing a chat with waiting requests stalled the queue for every chat; a table refused by the server stopped requests as if the network were down; and looking for the agent's question held up the next request. Queued requests in the same chat also reached the model out of order and duplicated."
+        },
+        {
+          "kind": "fix",
+          "id": "editsKept",
+          "title": "Nothing you type gets lost",
+          "detail": "An answer to a question goes back to the box when sending fails, returning to Settings no longer discards unsaved edits, /plan and /build no longer report success when the mode was refused, and a double click no longer sends two answers."
+        },
+        {
+          "kind": "fix",
+          "id": "safetyFixes",
+          "title": "Security fixes",
+          "detail": "Changing the app's texts on the server now requires the second factor, the live panel no longer reads files outside the project folder, Jev's daily limit no longer disappears with an invalid setting, and retries no longer spend the quota."
+        }
+      ]
+    },
+    {
+      "version": "0.50.0",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "parallelTasks",
+          "title": "Big requests split between agents working at the same time",
+          "detail": "Turn on Split big requests between agents in Settings › Jev › Routing. In a complex request in build mode in a git project, a reasoning model splits the work into up to 4 parts that touch separate files. Each part goes to a different agent, in its own copy of the project (git worktree), all at the same time, and the changes come back to your folder. A part whose changes no longer fit is kept as a patch for you to apply with git apply."
+        }
+      ]
+    },
+    {
+      "version": "0.49.0",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "planFirst",
+          "title": "A reasoning model plans, a coding agent builds",
+          "detail": "Turn on Plan with one model, build with another in Settings › Jev › Routing. In a complex request in build mode, the strongest reasoning model you have writes the plan first without editing anything, and the agent picked to build, possibly from another provider, gets the plan with the request. If the plan fails, the build goes ahead as before."
+        }
+      ]
+    },
+    {
+      "version": "0.48.0",
+      "date": "2026-10-04",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "secondOpinion",
+          "title": "Another agent reviews what the first one changed",
+          "detail": "Turn on Second opinion from another agent in Settings › Jev › Routing. After a request changes the project in build mode, an agent from another provider reads the diff without editing anything and lists the problems it finds at the end of the answer. Private files go by name only, and with a single agent enabled nothing changes."
+        }
+      ]
+    },
+    {
+      "version": "0.47.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "agentOrder",
+          "title": "Choose which agent wins a tie",
+          "detail": "In Settings › Jev › Routing, Agent preference sets who answers when two agents score the same for a request. Spread across chats keeps the current behavior, and Follow this order puts your favorite first. The model size the request needs still comes first."
+        },
+        {
+          "kind": "fix",
+          "id": "modelFamilies",
+          "title": "Small models no longer count as reasoning models",
+          "detail": "A newly found small model (haiku, mini, flash…) comes without the reasoning capability, so it no longer competes for analysis and complex requests, and OpenAI's o-series models are recognized as large reasoning models. Models you already have keep the capabilities you set."
+        }
+      ]
+    },
+    {
+      "version": "0.46.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "fairRouting",
+          "title": "Jev uses every agent you configured",
+          "detail": "When two models of the same size scored the same, the one first in alphabetical order won, so with Claude Code, Codex, Copilot and Cursor turned on every request went to Claude Code. Now a chat keeps the agent it is already using, and new chats are spread among the tied agents. A model that was never tried also starts with an average score instead of losing to any model with one success, so Jev learns which agent does best in each kind of request."
+        },
+        {
+          "kind": "feature",
+          "id": "agentFallback",
+          "title": "If the chosen agent cannot start, the next one answers",
+          "detail": "When the agent Jev picked is not installed, cannot open, or refuses right away for lack of login, key or quota, the request goes to the next agent on the list and the reply says so. An agent that fails after it has started working keeps the failure, so another one does not pick up a half-changed project. An enabled agent that is not installed on this computer also leaves the choice, as long as another enabled agent is."
+        }
+      ]
+    },
+    {
+      "version": "0.45.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "trayBackground",
+          "title": "Closing the window keeps JayV running in the tray",
+          "detail": "On Windows, macOS and Linux the close button now hides the window instead of quitting. Requests in the queue, sync, the Live panel and the update check keep running. The tray icon menu opens JayV straight on Projects, Organizations, Statistics, System or Settings, starts a new chat and checks for updates; Quit JayV is the way to close it for real. Opening JayV again from the menu or the Dock also brings the window back."
+        },
+        {
+          "kind": "fix",
+          "id": "updatesInBackground",
+          "title": "New versions show up even with the window hidden",
+          "detail": "The check for a new version now runs in the app core every 15 seconds, so it keeps working with the window in the tray, and it also runs when you come back to the window. A new version still takes a few minutes to appear after it is merged: that is the time to build the installers for every system."
+        },
+        {
+          "kind": "fix",
+          "id": "liveFixes",
+          "title": "Live panel follows the agent more reliably",
+          "detail": "A project opened in a subfolder of a repository now uses git, so the diff compares with how the file was before the request instead of showing everything as new. Temporary files that the agent creates and removes while saving no longer stay in the list as removed. A quick second save with the same size is no longer missed, and the files the agent writes in its first seconds are no longer mistaken for changes that already existed."
+        },
+        {
+          "kind": "fix",
+          "id": "chatFilterWidth",
+          "title": "The chat filter in Statistics no longer stretches across the screen",
+          "detail": "The project and chat filters in Statistics and in the organization dashboard have a fixed width, and long chat titles are cut with an ellipsis in the list; hover over one to read it in full."
+        }
+      ]
+    },
+    {
+      "version": "0.44.3",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "buildWrites",
+          "title": "Development mode edits files again",
+          "detail": "In Development mode the agent ran with every write denied, because it waited for an approval nobody could give from the chat. Claude Code now edits project files without asking, Codex writes inside the project and Copilot may edit files; commands still follow your settings. If Jev's write rule or your organization's is Deny, the agent stays read-only. The agent also stopped offering options the app does not have, such as approving a permission prompt."
+        }
+      ]
+    },
+    {
+      "version": "0.44.2",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "upcomingNotes",
+          "title": "What changes shows only the new version",
+          "detail": "What changes, in the update notice, now opens What's new with only what the new version brings, and a button to update from there."
+        },
+        {
+          "kind": "fix",
+          "id": "chatFits",
+          "title": "Chat messages fit inside their bubble",
+          "detail": "Long links, paths and words now wrap inside the bubble instead of being cut off at the sides, and wide tables and code scroll inside it. The tokens, cost and time line of each JayV answer sits on the right."
+        }
+      ]
+    },
+    {
+      "version": "0.44.1",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "answerNotBlocked",
+          "title": "Answering the agent is no longer blocked at the gatehouse",
+          "detail": "When the agent asked a second question (common in Planning mode), the answer was judged without the request that started the conversation and could be blocked as a new feature. The gatehouse now reads the conversation from the original request, and the answer inherits its pass."
+        }
+      ]
+    },
+    {
+      "version": "0.44.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "readableCode",
+          "title": "Easier-to-read code and file paths",
+          "detail": "Code in answers is colored by kind (keywords, strings, numbers, comments), sits on a deeper background with line numbers in their own margin, and long blocks open collapsed. File paths, even when written without backticks, become a badge with the folder dimmed and the file name highlighted."
+        }
+      ]
+    },
+    {
+      "version": "0.43.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "workMode",
+          "title": "Choose Planning or Development in each chat",
+          "detail": "Each chat now has a work mode selector under the message box: Auto (Jev picks for each request, as before), Planning or Development. You can also type /plan, /build or /auto, press Ctrl+. (⌘. on Mac) or use the command palette. If the chat is in Planning and you ask to implement, or in Auto you ask to implement again after a plan, Jev switches to Development by itself and says so in the reply, with a button to undo."
+        }
+      ]
+    },
+    {
+      "version": "0.42.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "chatBubbles",
+          "title": "Who said what, at a glance",
+          "detail": "In the chat, your requests now sit in a filled bubble on the right, and JayV's answers in a framed window with a 🤖 jayv bar on top showing the agent, the model and the gate's verdict."
+        },
+        {
+          "kind": "feature",
+          "id": "recentSteps",
+          "title": "Only the latest steps while a request runs",
+          "detail": "The in-progress strip above the message box shows the 3 most recent steps. A button opens the full list, and the next request starts collapsed again."
+        },
+        {
+          "kind": "fix",
+          "id": "readableButtons",
+          "title": "Readable answer buttons",
+          "detail": "Send answers, Send choice and Yes, in a question from the agent, had text the same color as the button. They are readable again in light and dark themes."
+        }
+      ]
+    },
+    {
+      "version": "0.41.1",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "translationsComplete",
+          "title": "Every text in your language",
+          "detail": "JayV read only the first 1,000 translated texts of each language, so the newest ones, such as the What's new window, the Lean code option in your profile and the version section in Settings, appeared in English. It now reads them all."
+        },
+        {
+          "kind": "fix",
+          "id": "updateEvery15s",
+          "title": "Updates found within seconds",
+          "detail": "JayV now looks for a new version every 15 seconds, with no setting to choose. When one is out, the notice appears at the top of every screen."
+        },
+        {
+          "kind": "fix",
+          "id": "translatedSteps",
+          "title": "Request steps in your language",
+          "detail": "The steps shown while a request runs, such as what Jev read, the route and what the agent is doing, are now written in your language instead of the raw event names. The update window now points to What's new instead of showing the release notes, which were in a single language."
+        }
+      ]
+    },
+    {
+      "version": "0.41.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "liveFiles",
+          "title": "Watch the files the agent changes, live",
+          "detail": "The new Live button in the chat header opens a panel beside the conversation with every file the request changes, newest first, and the diff of each one against how it was when the request started, updating as the agent writes. It opens by itself on the first change. Following the agent shows each file as soon as it changes, and if VS Code, Cursor or Windsurf is installed, it can open each file there too, on the changed line. Everything stays on this computer, and files covered by the privacy rules show only their name."
+        }
+      ]
+    },
+    {
+      "version": "0.40.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "chatRepositories",
+          "title": "Repositories inside the organization chat",
+          "detail": "The organization chat now shows, at the top of the conversation, every repository in the organization folder: its branch, how far it is ahead of or behind the remote, how many files changed and where its LLM policy comes from. It reads them again when a request finishes. The button on the organization page and on the Projects page is now called Open chat."
+        },
+        {
+          "kind": "feature",
+          "id": "updateInterval",
+          "title": "Choose how often to look for updates",
+          "detail": "In Settings › App you can choose to look for a new version every 15 minutes, 30 minutes, 1 hour or 4 hours, and see when the last check happened. A new version shows in the notice at the top of every screen and in the status bar."
+        },
+        {
+          "kind": "fix",
+          "id": "missingTranslations",
+          "title": "Texts that were still in English",
+          "detail": "The update window, the Close button and some sign-in and connection messages appeared in English in every language. They are now translated."
+        }
+      ]
+    },
+    {
+      "version": "0.39.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "systemHealth",
+          "title": "A clearer System page",
+          "detail": "The System page now opens with a health panel: whether the server is online and in sync, and whether each agent is installed and answering, with its version. Next to it are the installed version, a button to check for updates and the release notes. The engine numbers include how many answers the router learned from, and the local database shows every table with a bar for its size."
+        },
+        {
+          "kind": "feature",
+          "id": "systemDiagnostics",
+          "title": "Copy diagnostics",
+          "detail": "Copy diagnostics puts the version, system, connection, agents, engine numbers and table sizes on the clipboard, ready to paste into a request for help. It holds no chat content, keys or tokens. The configuration and database paths can be copied or shown in their folder."
+        }
+      ]
+    },
+    {
+      "version": "0.38.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "repoAgent",
+          "title": "Agent in all repositories",
+          "detail": "The old Organization chat button is now called Agent in all repositories, so it no longer looks like a chat with people. It also appears next to each organization on the Projects page. When that chat already exists on this computer, the button takes you straight to it instead of opening another one."
+        },
+        {
+          "kind": "feature",
+          "id": "projectFilters",
+          "title": "Project filters and search",
+          "detail": "The Projects page filter is now All, Personal and Organizations, which shows the projects of every organization together. Next to it, a search box finds projects by name, folder or repository."
+        },
+        {
+          "kind": "feature",
+          "id": "updateChoice",
+          "title": "You choose when to update",
+          "detail": "Checking for updates no longer installs the new version on its own. The window shows what changes and asks whether you want to update now or later."
+        },
+        {
+          "kind": "fix",
+          "id": "orgPageTidy",
+          "title": "Tidier organization page",
+          "detail": "The organization tabs no longer scroll sideways: Settings moved to a gear icon next to the agent button. Going back to the organization list is now an arrow beside the organization name."
+        }
+      ]
+    },
+    {
+      "version": "0.37.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "terminalLook",
+          "title": "A terminal look",
+          "detail": "JayV now looks like a modern terminal, in the style of Warp, with the same colors as before. The whole app uses a monospaced font. Each request and its answer form one block, and the block's left edge turns amber or red when the gatehouse asked a question or blocked it. The message box is a prompt with its shortcuts in view, and code shows line numbers."
+        },
+        {
+          "kind": "feature",
+          "id": "commandPalette",
+          "title": "Command palette (Ctrl+K / ⌘K)",
+          "detail": "Press Ctrl+K (⌘K on Mac) on any screen to search everything that has a button: go to a page, open a project, chat or organization, start a new chat or change the theme. Ctrl+1 to Ctrl+4 open Projects, Organizations, Statistics and System, Ctrl+N starts a new chat, Ctrl+G opens the gatehouse and Ctrl+, opens the settings."
+        },
+        {
+          "kind": "feature",
+          "id": "statusBar",
+          "title": "Status bar",
+          "detail": "A bar at the bottom of the window shows whether your changes are synced, the folder of the open project, its gatehouse count and the installed version. Click the count to open the gatehouse, or the version to see what's new."
+        }
+      ]
+    },
+    {
+      "version": "0.36.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "leanCode",
+          "title": "Less code in build mode",
+          "detail": "In build mode the agent now checks whether the code needs to exist and reuses what the language, the platform or an installed library already does before writing anything new. Validation, error handling, security and accessibility are never cut. Starter and Junior get a lighter version, and you can turn it off under Your level."
+        },
+        {
+          "kind": "feature",
+          "id": "symbolIndex",
+          "title": "A symbol index of your project",
+          "detail": "JayV now reads where each function, type and class is defined in Rust, TypeScript, JavaScript, Python and Go files, on your computer and without spending tokens. The file map sent to agents lists the definitions of the whole file with their line, and which files each one uses or is used by, and file search gives more weight to names a file defines."
+        },
+        {
+          "kind": "feature",
+          "id": "projectMap",
+          "title": "A project map at the start of each agent session",
+          "detail": "In projects with 80 files or more, an agent that starts a new session gets a short map built from the symbol index: the main folders, the files most others depend on and the entry points. A resumed session already has it and does not get it again."
+        },
+        {
+          "kind": "feature",
+          "id": "symbolTools",
+          "title": "Symbol tools for Claude Code (optional)",
+          "detail": "A new option in the Claude Code settings lets Claude ask JayV's symbol index where something is defined, who uses it and what a change affects, instead of searching the folder. It is off by default because the tool descriptions cost tokens in every session; run jayv bench to see whether it pays off in your project."
+        }
+      ]
+    },
+    {
+      "version": "0.35.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "projectNotes",
+          "title": "Project memory",
+          "detail": "On a project's chats screen, the Project memory button keeps short notes (up to 2,200 characters): how to test, where things live, what not to touch. They go to the agent once, when the session starts, and spare it from exploring the project to find them again. Secrets are refused, and everything syncs with your account."
+        },
+        {
+          "kind": "feature",
+          "id": "gateLearning",
+          "title": "The gatehouse learns from your answers",
+          "detail": "When the gatehouse asks where something lives or how to check a change and you answer in your next request, the sentence that answered becomes a project note. From then on the gatehouse no longer asks that in the project, and the agent already gets the answer."
+        },
+        {
+          "kind": "feature",
+          "id": "routingFeedback",
+          "title": "Routing learns from what did not work",
+          "detail": "An answer that arrived whole no longer always counts as a success. If your next message says it did not work, or the exit gate holds the answer, the model that answered loses a point. Each model's score is now also kept per kind of request, so reviews and tests can go to different models."
+        },
+        {
+          "kind": "feature",
+          "id": "levelSuggestion",
+          "title": "Level suggestion",
+          "detail": "In Settings, Your level now suggests moving one step up or down when the gatehouse history of the last 30 days calls for it (from 20 requests on): almost everything getting through at once, or many requests held. The switch is still yours, with one click."
+        },
+        {
+          "kind": "feature",
+          "id": "chatSearch",
+          "title": "Search your chats",
+          "detail": "A project's chats screen now has a search over what was said in its chats, with the matching passage highlighted. It runs on your computer, on a local index, without going to the network."
+        },
+        {
+          "kind": "feature",
+          "id": "answerRecall",
+          "title": "Reuses answers the project already has",
+          "detail": "When a request is nearly identical to one already answered in another chat of the same project, the earlier answer goes along, shortened, and the agent starts from it instead of exploring and answering everything again. Each time this happens shows up in the Jev panel."
+        },
+        {
+          "kind": "feature",
+          "id": "recipes",
+          "title": "Recipes for requests you repeat",
+          "detail": "Project memory shows the requests you have made three or more times and lets you turn them into a recipe: your procedure for that kind of request. The recipe goes along only when a request looks like it, so it adds nothing to the others."
+        }
+      ]
+    },
+    {
+      "version": "0.34.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "agentSessionResume",
+          "title": "Agents pick up where they left off",
+          "detail": "In the same chat, the next request resumes the Claude Code session of the previous one instead of opening a new one. The agent no longer rereads the project and the whole conversation on every message, which was the largest token cost of a long chat. A new session starts after 10 requests, or when the agent, model or folder changes."
+        },
+        {
+          "kind": "feature",
+          "id": "agentFileMap",
+          "title": "A file map instead of whole files",
+          "detail": "Agents that read the project on their own now get the list of the most relevant files with the definitions found in them, and open only what they need. Before, JayV pasted those files whole into the request and the agent read them again anyway. Models used through an API, which cannot see the disk, still get the files."
+        },
+        {
+          "kind": "feature",
+          "id": "parallelJev",
+          "title": "Faster start for every request",
+          "detail": "The entry gate and the routing read from Jev now run at the same time, so a request no longer waits for one network call after the other before going to the model."
+        },
+        {
+          "kind": "feature",
+          "id": "promptCache",
+          "title": "Prompt cache for Anthropic models",
+          "detail": "When you use an Anthropic model through the API, the instructions and the earlier part of the conversation are marked for the prompt cache, so they are billed at the cached rate on the next message. Cached tokens are now counted in usage for models used through an API too."
+        },
+        {
+          "kind": "feature",
+          "id": "benchCommand",
+          "title": "Measure the savings yourself",
+          "detail": "The new jayv bench command runs a list of requests through JayV and straight to the same agent, and prints the tokens each side was charged, cache included. It is the honest way to see what JayV saves on your own project."
+        },
+        {
+          "kind": "fix",
+          "id": "honestSavings",
+          "title": "Savings panel shows only real savings",
+          "detail": "The \"Trimmed context\" line was removed from What it saved: it counted text JayV itself had picked and then cut, not tokens the model would have spent. Agent sessions resumed are now counted in What it did."
+        },
+        {
+          "kind": "fix",
+          "id": "titleWithoutAgent",
+          "title": "Chat titles no longer open an agent session",
+          "detail": "Naming a chat used to start a full agent session just to get six words. Now only a model used through an API names the chat; with command line agents only, the chat keeps the summary of your first request."
+        },
+        {
+          "kind": "fix",
+          "id": "betterRetrieval",
+          "title": "Better choice of relevant files",
+          "detail": "The file search now weighs rare words over the ones every file has, splits identifiers like fetchUserName into words, ignores filler words, ranks documentation below code and, from a large file, sends the part that matches the request instead of its beginning."
+        },
+        {
+          "kind": "fix",
+          "id": "shortHistory",
+          "title": "Shorter history in each request",
+          "detail": "When a request cannot resume the agent session, earlier answers from the model come back in the history shortened to their first lines, since the new request needs the subject, not all the code already delivered."
+        }
+      ]
+    },
+    {
+      "version": "0.33.0",
+      "date": "2026-10-03",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "whatsNew",
+          "title": "What's new window",
+          "detail": "After every update, JayV opens this window with what changed since the last version you saw on this computer, split into new features and fixes. It shows once per version and goes away when you click Got it."
+        },
+        {
+          "kind": "feature",
+          "id": "whatsNewHistory",
+          "title": "Version history anytime",
+          "detail": "In Settings › App › Version, the What's new button opens the window again, with the installed version on top and the history of earlier ones below it."
+        }
+      ]
+    },
+    {
+      "version": "0.32.1",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "fixedSidebar",
+          "title": "Sidebar and header stay put when scrolling",
+          "detail": "On Projects, Organizations, the organization page, Settings, Profile, Statistics and System, the sidebar scrolled away with the content. Now only the page content scrolls; the sidebar and header keep the window's height and stay in view."
+        }
+      ]
+    },
+    {
+      "version": "0.32.0",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgChat",
+          "title": "Organization chat across every repository",
+          "detail": "The organization page has a new Organization chat button that opens one chat working on all of its repositories at once, using the organization folder on this computer. Without a folder, JayV asks for one first. The agent, the index and the gate see every clone inside it."
+        },
+        {
+          "kind": "feature",
+          "id": "orgChatReach",
+          "title": "See which repositories join the chat",
+          "detail": "Before opening, a window shows the folder (with a Change button) and sorts the repositories into: in this chat, left out because they are cloned in another folder, and left out because they are not on this computer."
+        },
+        {
+          "kind": "feature",
+          "id": "orgChatPolicy",
+          "title": "The strictest policy applies in the organization chat",
+          "detail": "The organization chat runs under the organization's LLM policy together with the policy of each of its repositories, and the strictest rule among them always wins."
+        },
+        {
+          "kind": "fix",
+          "id": "orgChatDashboard",
+          "title": "Organization chat in Statistics and Gate",
+          "detail": "Usage from the organization chat now shows up in the organization's Statistics and Gate tabs right away, without waiting for the server to link the project to it."
+        }
+      ]
+    },
+    {
+      "version": "0.31.0",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "twoFactor",
+          "title": "Two-factor authentication",
+          "detail": "In Profile › Security, turn on an authenticator app: scan the QR code (or type the key, shown in blocks of 4) and confirm with the first code. The factor only counts after that confirmation, and Cancel discards a half-done setup."
+        },
+        {
+          "kind": "feature",
+          "id": "twoFactorSignIn",
+          "title": "A 6-digit code at every sign-in",
+          "detail": "With the app turned on, every sign-in asks for the code after the password, GitHub, GitLab, Bitbucket or the password recovery link. The database refuses requests from a session that has not passed the second factor yet."
+        },
+        {
+          "kind": "feature",
+          "id": "twoFactorProtect",
+          "title": "Turning protection off asks for a code",
+          "detail": "Removing the second factor requires a current code from the app: a session left open is not enough to take the protection off the account."
+        },
+        {
+          "kind": "fix",
+          "id": "twoFactorPassword",
+          "title": "Changing the password with the app on",
+          "detail": "With the second factor on, the change password form also asks for the app code. If the code fails, JayV asks for the second factor again instead of leaving the session half-done."
+        }
+      ]
+    },
+    {
+      "version": "0.29.0",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "lockdown",
+          "title": "Installed app closed to inspection",
+          "detail": "In the installed app, the right-click menu (outside text fields, which keep copy and paste) and the shortcuts for developer tools, view source, save, print and reload are turned off, and the variables that would open a remote inspector are cleared at startup."
+        },
+        {
+          "kind": "feature",
+          "id": "safeConnections",
+          "title": "Safer connections",
+          "detail": "Every request JayV makes trusts only built-in certificate authorities and requires TLS 1.2 or newer: a proxy that intercepts HTTPS by installing its own certificate on the system is refused, while an ordinary proxy keeps working."
+        },
+        {
+          "kind": "fix",
+          "id": "realtimeNotifications",
+          "title": "Real-time notifications are back",
+          "detail": "The content security policy blocked the secure connection (wss) to Supabase, so the bell did not get notifications as they happened. It is allowed now, along with the embedded images used by the second-factor QR code."
+        }
+      ]
+    },
+    {
+      "version": "0.27.0",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgStats",
+          "title": "Statistics tab in the organization",
+          "detail": "Summary, charts, the Jev panel and tables by tool, model, project and chat, adding up only the projects on this computer that belong to the organization. There are project, chat and period filters, and clicking a table row narrows the view."
+        },
+        {
+          "kind": "feature",
+          "id": "orgGate",
+          "title": "Gate tab in the organization",
+          "detail": "The scoreboard and both gates, entry and exit, for the organization's projects. The tab shares its filter with Statistics: switching tabs keeps the selection, and opening another organization resets it."
+        }
+      ]
+    },
+    {
+      "version": "0.26.0",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "usernameOnce",
+          "title": "Username set once",
+          "detail": "Your username is locked after you first save your profile. The form warns you before saving, and afterwards the field is read-only. Skipping the profile step does not lock the name."
+        },
+        {
+          "kind": "feature",
+          "id": "orgPolicyDefaults",
+          "title": "New organizations start with a policy",
+          "detail": "When you create an organization, Never read and Local models only come filled with safe defaults, and the Policy tab opens ready to adjust."
+        },
+        {
+          "kind": "fix",
+          "id": "agentIcons",
+          "title": "Correct Claude Code and Codex icons",
+          "detail": "The agent tabs showed old drawings. They now show the official Claude Code icon and the current Codex icon, sharp at any size."
+        },
+        {
+          "kind": "fix",
+          "id": "agentExecutable",
+          "title": "Executable field locked",
+          "detail": "In the Claude, Codex, Copilot and Cursor tabs, JayV sets the executable itself: the field is disabled, with a hint explaining why, and the Verify button still works."
+        }
+      ]
+    },
+    {
+      "version": "0.25.0",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "updateBanner",
+          "title": "New version notice at the top",
+          "detail": "When a new version comes out, a bar appears at the top of every screen with What changes (the release notes) and Update now. Closing the bar hides the notice for that version only."
+        },
+        {
+          "kind": "feature",
+          "id": "updateNotification",
+          "title": "New version in the bell too",
+          "detail": "Each new version becomes a notification in the bell, just one per version, that takes you straight to the update window."
+        },
+        {
+          "kind": "fix",
+          "id": "updateNoAutoInstall",
+          "title": "Updates no longer interrupt your work",
+          "detail": "JayV used to find the new version when it opened and install it right away, with the progress window in front. Now the check, at startup and every 30 minutes, only notifies you: you choose when to update. Without a network, the check stays silent."
+        }
+      ]
+    },
+    {
+      "version": "0.24.0",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgFolderRemove",
+          "title": "Remove the organization folder",
+          "detail": "In the Repositories tab, the Remove button makes JayV forget the organization folder on this computer, after a confirmation. Nothing is deleted from disk: clones and projects stay where they are, and the next clone asks for a folder again."
+        }
+      ]
+    },
+    {
+      "version": "0.23.1",
+      "date": "2026-10-02",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "projectDeletion",
+          "title": "Deleting a project removes its chats everywhere",
+          "detail": "Chats from a deleted project came back on another computer after syncing. Now the deletion also carries over on the server to the project's chats, messages and checks."
+        }
+      ]
+    }
+  ]
+}
