@@ -1,6 +1,18 @@
 {
-  "version": "0.64.0",
+  "version": "0.65.0",
   "releases": [
+    {
+      "version": "0.65.0",
+      "date": "2026-10-05",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "honestVerdicts",
+          "title": "Answers say what was really checked",
+          "detail": "An answer no longer turns green just because it passed the house rules. Unless the exit gate held something, it shows as not verified, because JayV ran no test, build or lint on it. The new What was checked button under each answer separates what JayV observed (the entry and exit gates), what a model said without anyone checking it (the agent's answer and the second opinion) and what is still not verified. In Development mode the agent is also asked to end with what it ran, what it assumes and what it did not verify."
+        }
+      ]
+    },
     {
       "version": "0.64.0",
       "date": "2026-10-05",
