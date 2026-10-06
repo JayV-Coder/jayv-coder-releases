@@ -1,6 +1,18 @@
 {
-  "version": "0.71.0",
+  "version": "0.71.1",
   "releases": [
+    {
+      "version": "0.71.1",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "settingsSideTabs",
+          "title": "Settings tabs on the left",
+          "detail": "The tabs of the Settings page (App, Jev, MCP, Skills and each agent) now sit in a column on the left, next to the content of the page, instead of in a row on top. The column follows you as the page scrolls."
+        }
+      ]
+    },
     {
       "version": "0.71.0",
       "date": "2026-10-06",
