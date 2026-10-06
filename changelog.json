@@ -1,6 +1,18 @@
 {
-  "version": "0.71.1",
+  "version": "0.72.0",
   "releases": [
+    {
+      "version": "0.72.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgExtensions",
+          "title": "MCP servers and skills of the organization",
+          "detail": "Owners and maintainers set up the organization’s MCP servers and skills on the site (MCP servers and Skills tabs) and every member receives them in the app, on top of their own. In Settings › MCP and › Skills they show as “from your organizations”, read-only, and apply in the organization’s projects. Server secrets stay on the server and only reach the members’ app. The command palette (Ctrl+K) opens those site tabs."
+        }
+      ]
+    },
     {
       "version": "0.71.1",
       "date": "2026-10-06",

@@ -1,6 +1,6 @@
 {
-  "version": "0.71.1",
-  "updatedAt": "2026-10-06T16:01:37.332Z",
+  "version": "0.72.0",
+  "updatedAt": "2026-10-06T17:01:17.718Z",
   "categories": [
     "start",
     "chat",
@@ -22,6 +22,7 @@
     "answerRecall",
     "adaptiveRouting",
     "agentSessions",
+    "mcp",
     "skills",
     "contextCache",
     "leanCode",
@@ -41,6 +42,7 @@
     "organizations",
     "orgRepositories",
     "orgChat",
+    "orgExtensions",
     "profilePhoto",
     "twoFactor",
     "commandPalette",
