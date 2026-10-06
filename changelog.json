@@ -1,6 +1,18 @@
 {
-  "version": "0.72.0",
+  "version": "0.73.0",
   "releases": [
+    {
+      "version": "0.73.0",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "updateOnLaunch",
+          "title": "Updates itself when it opens",
+          "detail": "On open, JayV looks for a new version before showing the screen and, if there is one, downloads it, installs it and restarts on its own, with the progress window in front. Without a network (after 10 seconds) or by clicking Skip, the app opens normally. You can turn it off in Settings › App › Version, or from the command palette (Ctrl+K)."
+        }
+      ]
+    },
     {
       "version": "0.72.0",
       "date": "2026-10-06",
