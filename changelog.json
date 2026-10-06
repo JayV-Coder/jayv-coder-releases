@@ -1,6 +1,18 @@
 {
-  "version": "0.76.0",
+  "version": "0.76.1",
   "releases": [
+    {
+      "version": "0.76.1",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "progressAutoScroll",
+          "title": "The progress panel follows the latest step",
+          "detail": "The steps list beside the chat now scrolls to the end by itself whenever a new step arrives. If you scroll up to read an earlier step, it stays where you left it and shows a button to jump back to the latest step."
+        }
+      ]
+    },
     {
       "version": "0.76.0",
       "date": "2026-10-07",
