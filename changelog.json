@@ -1,6 +1,18 @@
 {
-  "version": "0.68.0",
+  "version": "0.68.1",
   "releases": [
+    {
+      "version": "0.68.1",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "windowsInstallerKill",
+          "title": "Windows updates no longer stop at \"Failed to kill JayV\"",
+          "detail": "The Windows installer now waits for JayV to finish closing after an update, then closes any JayV process still running, including agent helpers, instead of giving up."
+        }
+      ]
+    },
     {
       "version": "0.68.0",
       "date": "2026-10-06",
