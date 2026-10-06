@@ -1,6 +1,30 @@
 {
-  "version": "0.73.0",
+  "version": "0.75.0",
   "releases": [
+    {
+      "version": "0.75.0",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "moreProviders",
+          "title": "Kilo Code, OpenRouter and LiteLLM",
+          "detail": "Three new agents in Settings. Kilo Code is a command-line agent that edits the project like the others. OpenRouter and LiteLLM are API gateways (address and key, which stays on this computer): they answer with text only, so Jev uses them for questions, analysis and review. Check the connection and refresh the models from each tab or the command palette (Ctrl+K). Organizations can allow or block each one."
+        }
+      ]
+    },
+    {
+      "version": "0.74.0",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "tutorials",
+          "title": "Tutorials for every feature",
+          "detail": "Each screen has a guided tour that introduces its features, highlighting the element on screen. It opens by itself on your first visit; afterwards, use the help button (?) in the sidebar, the command palette (Ctrl+K) or Settings › App › Tutorials, where you can also turn off the automatic opening. New features join the tutorial together with the documentation."
+        }
+      ]
+    },
     {
       "version": "0.73.0",
       "date": "2026-10-07",
