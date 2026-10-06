@@ -1,6 +1,18 @@
 {
-  "version": "0.69.0",
+  "version": "0.70.0",
   "releases": [
+    {
+      "version": "0.70.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "paletteEverything",
+          "title": "Every screen is reachable from Ctrl+K",
+          "detail": "The command palette now lists what each screen does: new project and layout, project notes and chat search, the live files panel, stopping a request, every Settings tab and its save, discard and defaults buttons, the organization tabs, accepting invites, language, theme, notifications, sign out, checking for updates, the system diagnostics and the documentation on the site."
+        }
+      ]
+    },
     {
       "version": "0.69.0",
       "date": "2026-10-06",
