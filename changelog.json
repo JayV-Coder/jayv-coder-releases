@@ -1,6 +1,18 @@
 {
-  "version": "0.76.2",
+  "version": "0.77.0",
   "releases": [
+    {
+      "version": "0.77.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "commandPermissions",
+          "title": "Command permissions of the organization",
+          "detail": "Owners and maintainers choose on the site which commands agents never run in the organization's projects, for the whole organization and for each repository. In the chat's Permissions you can allow specific commands for the next message; the blocked ones show disabled as \"Blocked by <organization>\", and the agent is never given them. Claude and Copilot refuse each blocked command; Codex, Cursor and Kilo, which have no per-command list, run in their safest mode in those projects."
+        }
+      ]
+    },
     {
       "version": "0.76.2",
       "date": "2026-10-06",
