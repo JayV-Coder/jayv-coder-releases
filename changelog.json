@@ -1,6 +1,18 @@
 {
-  "version": "0.70.1",
+  "version": "0.71.0",
   "releases": [
+    {
+      "version": "0.71.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "skills",
+          "title": "Skills that Jev chooses for you",
+          "detail": "Install skills (folders with a SKILL.md) in Settings › Skills, from a folder or by pasting the file. After reading each request, Jev picks the one skill that fits, or none, and tells the model to follow it; the chat shows a Skill step when one was used. Also reachable from the command palette (Ctrl+K)."
+        }
+      ]
+    },
     {
       "version": "0.70.1",
       "date": "2026-10-06",
