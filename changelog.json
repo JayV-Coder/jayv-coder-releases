@@ -1,6 +1,18 @@
 {
-  "version": "0.80.0",
+  "version": "0.81.0",
   "releases": [
+    {
+      "version": "0.81.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "mcpAllAgents",
+          "title": "MCP servers for every agent",
+          "detail": "Every server of Settings › MCP now reaches Claude Code, Codex, Copilot, Cursor, Kilo Code, OpenRouter and LiteLLM, as long as “Approve MCP servers” is on in that agent’s tab: the same switch for all of them, off by default. OpenRouter and LiteLLM call the tools through JayV itself. Ctrl+K has a command to flip the switch per agent."
+        }
+      ]
+    },
     {
       "version": "0.80.0",
       "date": "2026-10-06",
