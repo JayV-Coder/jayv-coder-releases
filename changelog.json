@@ -1,6 +1,18 @@
 {
-  "version": "0.75.0",
+  "version": "0.76.0",
   "releases": [
+    {
+      "version": "0.76.0",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "providerIcons",
+          "title": "Official icons and checked integrations",
+          "detail": "Kilo Code, OpenRouter and LiteLLM now use their official icons. The integration was checked against each one's documentation: Kilo runs with `kilo run --model provider/model --auto` and lists models with `kilo models`; OpenRouter and LiteLLM use /chat/completions and /models with the Bearer key. LiteLLM's default address is now http://localhost:4000/v1, as in its documentation; addresses you already saved keep working."
+        }
+      ]
+    },
     {
       "version": "0.75.0",
       "date": "2026-10-07",
