@@ -1,6 +1,18 @@
 {
-  "version": "0.68.1",
+  "version": "0.69.0",
   "releases": [
+    {
+      "version": "0.69.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgGeneralChats",
+          "title": "General chats of the organization, kept apart",
+          "detail": "In the project list, the chats that work on all repositories of an organization now have their own General chats block, separate from the projects of each repository. The Open chat button asks which general chat to continue, or starts a new one, and the command palette (Ctrl+K) lists them too."
+        }
+      ]
+    },
     {
       "version": "0.68.1",
       "date": "2026-10-06",
