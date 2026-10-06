@@ -1,6 +1,30 @@
 {
-  "version": "0.77.0",
+  "version": "0.78.0",
   "releases": [
+    {
+      "version": "0.78.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "modelsOffByDefault",
+          "title": "Models start turned off",
+          "detail": "New installs and every model an agent lists later now start turned off: you turn on, in Settings › Agents, only the ones you want JayV to use. Models you had already turned on stay on. With none on, a request says so and points to Settings."
+        },
+        {
+          "kind": "feature",
+          "id": "loadingSpinner",
+          "title": "A spinner on every loading screen",
+          "detail": "Wherever a screen waits for data (\"Reading settings…\", usage, plans, system, repositories), a spinner now shows above the message, centered."
+        },
+        {
+          "kind": "feature",
+          "id": "launchWithoutSkip",
+          "title": "No Skip button on the update screen",
+          "detail": "The screen that checks for updates when JayV opens no longer has a Skip button. If there is no network or the check fails, the app opens by itself after 10 seconds."
+        }
+      ]
+    },
     {
       "version": "0.77.0",
       "date": "2026-10-06",
