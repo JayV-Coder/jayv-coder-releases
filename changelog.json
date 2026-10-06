@@ -1,6 +1,18 @@
 {
-  "version": "0.70.0",
+  "version": "0.70.1",
   "releases": [
+    {
+      "version": "0.70.1",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "replyLanguage",
+          "title": "JayV always replies in the language of the app",
+          "detail": "Sometimes the reply came in another language: the language you chose was swapped for English when the language list did not load in time, and the agents read it buried in a long English instruction. JayV now keeps your saved language, tells the core about it right at startup, and repeats it at the end of every request sent to a model."
+        }
+      ]
+    },
     {
       "version": "0.70.0",
       "date": "2026-10-06",
