@@ -1,6 +1,18 @@
 {
-  "version": "0.65.0",
+  "version": "0.65.1",
   "releases": [
+    {
+      "version": "0.65.1",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "githubApp",
+          "title": "GitHub through the JayV GitHub App",
+          "detail": "Signing in with GitHub, in the app and on the site, and connecting GitHub to an organization's repositories now go through the JayV GitHub App instead of an OAuth App. When connecting, GitHub asks which account or organization and which repositories JayV may read, and nothing else is reachable. An organization connected before has to connect GitHub again."
+        }
+      ]
+    },
     {
       "version": "0.65.0",
       "date": "2026-10-05",
