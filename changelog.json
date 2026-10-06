@@ -1,6 +1,18 @@
 {
-  "version": "0.79.0",
+  "version": "0.79.1",
   "releases": [
+    {
+      "version": "0.79.1",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "liveFilesDiagnostics",
+          "title": "Live says what it is watching",
+          "detail": "The first line of the Live panel now shows which folder JayV is watching and how (git or a folder without git), or says it is watching none. The panel reads the state again when it opens, and the VS Code button now also finds the editor in /snap/bin, ~/.local/bin and the VS Code folders on Windows and macOS, where an app opened from the system menu could not see it."
+        }
+      ]
+    },
     {
       "version": "0.79.0",
       "date": "2026-10-06",
