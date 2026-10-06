@@ -1,6 +1,36 @@
 {
-  "version": "0.78.0",
+  "version": "0.79.0",
   "releases": [
+    {
+      "version": "0.79.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "chatWidePermissions",
+          "title": "Permissions last for the whole chat",
+          "detail": "What you turn on in Permissions (run commands, Git, network and specific commands) now stays on for every message in the chat until you turn it off, not only the next one. The choice is kept on this computer, per chat, and what the organization blocks still applies."
+        },
+        {
+          "kind": "feature",
+          "id": "sidebarHeaderButtons",
+          "title": "Bell and help next to the logo",
+          "detail": "The notifications bell and the help button (?) moved to the top of the sidebar, to the right of the JayV logo. The profile and Settings stay at the bottom."
+        },
+        {
+          "kind": "fix",
+          "id": "replyLanguageEverywhere",
+          "title": "Replies always in your language",
+          "detail": "The app-language reminder now goes with every request, including the lines JayV writes itself when you approve a command or answer a question (in English, and the model followed them). The app also tells the core again if the first notice is lost. Models that read English files or documentation keep answering in the language you chose."
+        },
+        {
+          "kind": "fix",
+          "id": "codeAndFiles",
+          "title": "Code and files recognized in every reply",
+          "detail": "The reply is formatted while it is being written, not only at the end. File chips now cover paths with spaces, Windows paths, .env.example, line ranges (file.ts:10-20) and links to files; code blocks cover unclosed, indented, ~~~ and longer fences, and the text also shows italics and double-backtick code."
+        }
+      ]
+    },
     {
       "version": "0.78.0",
       "date": "2026-10-06",
