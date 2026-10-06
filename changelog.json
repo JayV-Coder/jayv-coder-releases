@@ -1,6 +1,36 @@
 {
-  "version": "0.79.1",
+  "version": "0.80.0",
   "releases": [
+    {
+      "version": "0.80.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "planFollowUp",
+          "title": "“Go ahead with the plan” now builds",
+          "detail": "In Auto, a message that asks to carry out the plan the chat already has (“siga com o desenvolvimento”, “chega de plano”, “continue with the plan”, in any app language) is no longer held by the entry gate or sent to planning again: it goes to Development with the whole plan, even after the app was reopened."
+        },
+        {
+          "kind": "feature",
+          "id": "quotaGuard",
+          "title": "Quota guard for every agent",
+          "detail": "JayV does not open an agent whose plan limit is at 95% or more, caps the agent calls one request can open, and stops a run that takes more than 400 tool steps or about 1.5 million tokens' worth of quota, saying so in the chat. Planning no longer picks the large model by itself, and a repeated Claude result is no longer counted several times in usage."
+        },
+        {
+          "kind": "feature",
+          "id": "conversationFind",
+          "title": "Find in the conversation (Ctrl+F)",
+          "detail": "Ctrl+F (⌘F on Mac) opens a search inside the open chat: matches are highlighted, Enter and Shift+Enter move between them and Esc closes. It is also in the command palette."
+        },
+        {
+          "kind": "feature",
+          "id": "lockedWebview",
+          "title": "Browser shortcuts are blocked",
+          "detail": "In the installed app, the shortcuts of the web engine (reload, zoom, print, save page, native find, back and forward, view source, inspector, opening files) and the native right-click menu outside text fields no longer do anything. Copy, cut, paste, select all and undo keep working, and so do JayV's own shortcuts."
+        }
+      ]
+    },
     {
       "version": "0.79.1",
       "date": "2026-10-06",
