@@ -1,6 +1,24 @@
 {
-  "version": "0.66.0",
+  "version": "0.67.0",
   "releases": [
+    {
+      "version": "0.67.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "messagePermissions",
+          "title": "Permissions for the next message",
+          "detail": "Next to the mode, Permissions lets you allow commands, Git writes and the network only for the next message you send. The /plan, /build and /auto hint left the message box to make room."
+        },
+        {
+          "kind": "fix",
+          "id": "blockedCommandAsks",
+          "title": "A blocked command now asks you",
+          "detail": "When the agent is blocked by a permission (Codex could not run git add because .git is read-only, for example), JayV asks above the message box whether to run the command, deny it or always allow it in the project, instead of only reporting it. Run sends the request again with that permission."
+        }
+      ]
+    },
     {
       "version": "0.66.0",
       "date": "2026-10-06",
