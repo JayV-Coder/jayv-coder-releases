@@ -1,6 +1,18 @@
 {
-  "version": "0.67.0",
+  "version": "0.68.0",
   "releases": [
+    {
+      "version": "0.68.0",
+      "date": "2026-10-06",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "mcpServers",
+          "title": "MCP servers for your agents",
+          "detail": "Settings › MCP lists the servers JayV hands to Claude Code, Codex and Copilot on every request. Add one by hand, paste a configuration, or type /mcp in a chat followed by the configuration or a description; an agent drafts it, and nothing is saved until you check it."
+        }
+      ]
+    },
     {
       "version": "0.67.0",
       "date": "2026-10-06",
