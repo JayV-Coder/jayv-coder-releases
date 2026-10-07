@@ -1,6 +1,18 @@
 {
-  "version": "0.82.1",
+  "version": "0.83.0",
   "releases": [
+    {
+      "version": "0.83.0",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "skillsHub",
+          "title": "Install skills from skills.sh",
+          "detail": "Settings › Skills (and the organization’s Skills tab on the site) now have a skills.sh section: search the open directory and install a skill with one click. In the app it is a regular local skill; on the site it is delivered to every member. Ctrl+K › Install from skills.sh jumps to the search."
+        }
+      ]
+    },
     {
       "version": "0.82.1",
       "date": "2026-10-07",

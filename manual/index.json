@@ -1,6 +1,6 @@
 {
-  "version": "0.82.1",
-  "updatedAt": "2026-10-07T19:08:29.037Z",
+  "version": "0.83.0",
+  "updatedAt": "2026-10-07T19:17:42.986Z",
   "categories": [
     "start",
     "chat",
@@ -28,6 +28,7 @@
     "consumptionGuard",
     "mcp",
     "skills",
+    "skillsHub",
     "contextCache",
     "leanCode",
     "symbolIndex",
