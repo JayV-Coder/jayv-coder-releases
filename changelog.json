@@ -1,6 +1,18 @@
 {
-  "version": "0.81.0",
+  "version": "0.82.0",
   "releases": [
+    {
+      "version": "0.82.0",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "mcpDefaults",
+          "title": "MCP servers ready to use",
+          "detail": "Sequential thinking, fetch, git and memory now come registered in Settings › MCP (and in every organization on the site), as regular entries you can turn off, edit or remove; a removed one does not come back. In an organization’s chats (the general one and each project’s) the organization’s servers win over yours with the same name, even when the organization turns one off. fetch and git run through uvx (the official servers are Python, not npm), so uv must be installed; the servers only reach an agent with “Approve MCP servers” on in its tab."
+        }
+      ]
+    },
     {
       "version": "0.81.0",
       "date": "2026-10-06",
