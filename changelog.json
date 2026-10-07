@@ -1,6 +1,18 @@
 {
-  "version": "0.83.1",
+  "version": "0.84.0",
   "releases": [
+    {
+      "version": "0.84.0",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "planFeatures",
+          "title": "Every feature in the admin list",
+          "detail": "MCP servers, skills, skills.sh search, the Kilo Code agent, OpenRouter and LiteLLM, and find in conversation can now be switched per plan from the site's Administration. Plans that already exist keep all of them on."
+        }
+      ]
+    },
     {
       "version": "0.83.1",
       "date": "2026-10-07",
