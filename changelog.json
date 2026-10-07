@@ -1,6 +1,18 @@
 {
-  "version": "0.83.0",
+  "version": "0.83.1",
   "releases": [
+    {
+      "version": "0.83.1",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "backMark",
+          "title": "One back button everywhere",
+          "detail": "Every back button in the app (organization, all projects, tutorial, questions to the agent, sign-in) now uses the same green ❯ pointing left that the site uses, in both light and dark themes."
+        }
+      ]
+    },
     {
       "version": "0.83.0",
       "date": "2026-10-07",
