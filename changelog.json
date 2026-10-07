@@ -1,6 +1,30 @@
 {
-  "version": "0.82.0",
+  "version": "0.82.1",
   "releases": [
+    {
+      "version": "0.82.1",
+      "date": "2026-10-07",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "autoGrants",
+          "title": "Chat permissions count in Auto mode",
+          "detail": "In Auto, Jev sometimes sent the request to planning, which carries no permissions, so the agent seemed to ignore them. Now, with any permission given in the chat (in the picker, Run or Always allow), an Auto request goes to development and the agent gets it. A pinned Planning stays read-only."
+        },
+        {
+          "kind": "fix",
+          "id": "settingsApplied",
+          "title": "Saving settings takes effect right away",
+          "detail": "On save, the core tells the screen, which tells the language to the core and the tray menu again, and the next request already uses the new settings, with no restart. If a request is running, it finishes with the old ones and the app says so."
+        },
+        {
+          "kind": "fix",
+          "id": "skillsInParallel",
+          "title": "The chosen skill reaches parallel agents",
+          "detail": "In complex requests split into parallel parts, the skill Jev picked (and the request’s other notes) did not reach each part’s agent. Now it does. In an ordinary request, a real-run test confirms that the skill’s instructions reach the agent along with the request."
+        }
+      ]
+    },
     {
       "version": "0.82.0",
       "date": "2026-10-07",
