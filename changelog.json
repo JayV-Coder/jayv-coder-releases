@@ -1,6 +1,18 @@
 {
-  "version": "0.84.0",
+  "version": "0.85.0",
   "releases": [
+    {
+      "version": "0.85.0",
+      "date": "2026-10-08",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgTabs",
+          "title": "Organization page like the site",
+          "detail": "The organization’s tabs now sit in a vertical column, as on the site, with new MCP and Skills tabs that list what the organization gives its members. The back button is the site’s: the green ❯ pointing left with “Back to organizations” beside it."
+        }
+      ]
+    },
     {
       "version": "0.84.0",
       "date": "2026-10-07",
