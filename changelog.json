@@ -1,6 +1,18 @@
 {
-  "version": "0.87.0",
+  "version": "0.87.1",
   "releases": [
+    {
+      "version": "0.87.1",
+      "date": "2026-10-08",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "environmentSwitchLogin",
+          "title": "Switching environment no longer shows a sign-in error",
+          "detail": "Switching to an organization's environment reloaded the window and tried to use the sign-in link again, which ended in \"PKCE code verifier not found\". Each sign-in link is now used only once."
+        }
+      ]
+    },
     {
       "version": "0.87.0",
       "date": "2026-10-08",
