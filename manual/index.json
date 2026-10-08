@@ -1,6 +1,6 @@
 {
-  "version": "0.88.1",
-  "updatedAt": "2026-10-08T14:40:09.206Z",
+  "version": "0.88.2",
+  "updatedAt": "2026-10-08T15:07:48.099Z",
   "categories": [
     "start",
     "chat",
@@ -46,6 +46,7 @@
     "stats",
     "organizations",
     "environments",
+    "notifications",
     "orgRepositories",
     "orgChat",
     "orgExtensions",

@@ -1,6 +1,18 @@
 {
-  "version": "0.88.1",
+  "version": "0.88.2",
   "releases": [
+    {
+      "version": "0.88.2",
+      "date": "2026-10-08",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "siteNotifications",
+          "title": "Notifications on the site too",
+          "detail": "The site now has the same bell as the app, in the top bar: invitations and changes in your organizations show up there, an invitation can be accepted or declined in the list, and reading a notification marks it read in the app too. Answers, questions from the agent and plan limits stay in the app only."
+        }
+      ]
+    },
     {
       "version": "0.88.1",
       "date": "2026-10-08",
