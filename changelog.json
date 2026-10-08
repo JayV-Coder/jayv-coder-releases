@@ -1,6 +1,18 @@
 {
-  "version": "0.88.0",
+  "version": "0.88.1",
   "releases": [
+    {
+      "version": "0.88.1",
+      "date": "2026-10-08",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "environmentManual",
+          "title": "Manual of environments mentions the loading screen",
+          "detail": "The Environments page of the manual now says that switching shows a loading screen and does not look for updates."
+        }
+      ]
+    },
     {
       "version": "0.88.0",
       "date": "2026-10-08",
