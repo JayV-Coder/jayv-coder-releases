@@ -1,6 +1,18 @@
 {
-  "version": "0.86.0",
+  "version": "0.87.0",
   "releases": [
+    {
+      "version": "0.87.0",
+      "date": "2026-10-08",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "environmentUsage",
+          "title": "Usage by environment",
+          "detail": "Statistics now say which environment the spending belongs to, and the site's Users page shows each account's projects, chats and usage in every environment."
+        }
+      ]
+    },
     {
       "version": "0.86.0",
       "date": "2026-10-08",
