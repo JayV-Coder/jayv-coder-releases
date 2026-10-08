@@ -1,6 +1,24 @@
 {
-  "version": "0.87.1",
+  "version": "0.88.0",
   "releases": [
+    {
+      "version": "0.88.0",
+      "date": "2026-10-08",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "environmentSwitchLoading",
+          "title": "Switching environment shows a loading screen",
+          "detail": "When you switch environment, JayV no longer looks for updates: it shows a loading screen until the new environment's data arrives."
+        },
+        {
+          "kind": "fix",
+          "id": "orgPendingInvites",
+          "title": "Pending invites in the Members tab",
+          "detail": "Owners and maintainers now see, below the members, the invites still waiting for an answer. The site also lists the members (owner included) next to the invites."
+        }
+      ]
+    },
     {
       "version": "0.87.1",
       "date": "2026-10-08",
