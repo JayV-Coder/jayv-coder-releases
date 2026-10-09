@@ -1,6 +1,24 @@
 {
-  "version": "0.88.2",
+  "version": "0.89.0",
   "releases": [
+    {
+      "version": "0.89.0",
+      "date": "2026-10-09",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgEnvironmentMenu",
+          "title": "The organization's own menu",
+          "detail": "Inside an organization's environment, the side menu now shows only that organization: its card at the top and its tabs as items — Projects, Statistics, Gatehouse, Members, Repositories, MCP and Skills. Organizations, System and Plans stay in the Personal environment, and Ctrl+K, the keyboard shortcuts and the tray menu follow the same rule."
+        },
+        {
+          "kind": "fix",
+          "id": "launchCheckText",
+          "title": "Cleaner update check on opening",
+          "detail": "The screen shown while JayV looks for a new version on opening now shows only \"Checking for updates…\", without the explanation under it."
+        }
+      ]
+    },
     {
       "version": "0.88.2",
       "date": "2026-10-08",
