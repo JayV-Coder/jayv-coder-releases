@@ -1,6 +1,6 @@
 {
-  "version": "0.92.0",
-  "updatedAt": "2026-10-10T11:43:02.991Z",
+  "version": "0.93.0",
+  "updatedAt": "2026-10-10T17:17:27.357Z",
   "categories": [
     "start",
     "chat",
@@ -16,6 +16,7 @@
     "agents",
     "kiloCode",
     "gatewayProviders",
+    "llmMods",
     "workModes",
     "stopRequest",
     "progressPanel",
