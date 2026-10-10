@@ -1,6 +1,36 @@
 {
-  "version": "0.91.0",
+  "version": "0.92.0",
   "releases": [
+    {
+      "version": "0.92.0",
+      "date": "2026-10-10",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "settingsSaveOnly",
+          "title": "Settings change only when you save",
+          "detail": "Nothing on the Settings screen takes effect by itself anymore: language, theme, tutorials, updating on open, MCP servers (turning on or off, editing, adding, removing) and skills (installing, turning on or off, removing) wait for Save settings, with a Not saved mark on what changed. Discard drops everything and Restore defaults only fills in the starting values. A server reviewed after /mcp in a chat goes to Settings › MCP to be saved."
+        },
+        {
+          "kind": "feature",
+          "id": "orgProjectDeleteOnSite",
+          "title": "Organization projects are deleted on the site",
+          "detail": "In an organization's environment, projects no longer have a Delete button: an owner or maintainer deletes them on the site, in the organization's Projects tab, and they leave the app of every member who has them."
+        },
+        {
+          "kind": "fix",
+          "id": "settingsOwnExtensions",
+          "title": "Settings without the organization's MCP and skills",
+          "detail": "Settings › MCP and Settings › Skills list only your own servers and skills. What an organization gives is in its environment, under MCP and Skills in its side menu."
+        },
+        {
+          "kind": "fix",
+          "id": "noWindowScroll",
+          "title": "No scrolling outside the content",
+          "detail": "The JayV window no longer scrolls or bounces as a whole: only the content of each screen scrolls, inside it."
+        }
+      ]
+    },
     {
       "version": "0.91.0",
       "date": "2026-10-09",
