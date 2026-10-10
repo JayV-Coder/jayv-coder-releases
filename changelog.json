@@ -1,6 +1,18 @@
 {
-  "version": "0.90.0",
+  "version": "0.91.0",
   "releases": [
+    {
+      "version": "0.91.0",
+      "date": "2026-10-09",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "tutorialParts",
+          "title": "Long tutorial steps in parts",
+          "detail": "Tutorial steps with a lot of text, like Environments, are now split into short parts without cutting any sentence: Next and the arrow keys go through the parts before moving on, Back returns to the previous part, and the small bars under the text show which part you are on. Short steps stay as they were."
+        }
+      ]
+    },
     {
       "version": "0.90.0",
       "date": "2026-10-09",
