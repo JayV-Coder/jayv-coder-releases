@@ -1,6 +1,24 @@
 {
-  "version": "0.89.0",
+  "version": "0.90.0",
   "releases": [
+    {
+      "version": "0.90.0",
+      "date": "2026-10-09",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "orgProjectsHeading",
+          "title": "The organization heads the Projects page",
+          "detail": "In an organization's environment, the Projects page now shows the organization itself at the top — name, @slug, how many projects, your role and where the projects come from — with its Open chat button where New project used to be. The Open organization button and the organization's own projects tab are gone: Projects is the place for them."
+        },
+        {
+          "kind": "feature",
+          "id": "noOrganizationsPage",
+          "title": "Organizations through the environment selector",
+          "detail": "The Organizations item and page left the side menu: you open an organization by choosing its environment under the logo, invitations are answered in the bell, and creating or managing organizations stays on the site (the tray's Organizations item opens it). Ctrl+2 no longer does anything."
+        }
+      ]
+    },
     {
       "version": "0.89.0",
       "date": "2026-10-09",
