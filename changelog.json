@@ -1,6 +1,24 @@
 {
-  "version": "0.93.0",
+  "version": "0.94.0",
   "releases": [
+    {
+      "version": "0.94.0",
+      "date": "2026-10-11",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "featureMods",
+          "title": "Features are mods too",
+          "detail": "Statistics, the gatehouse board, live files, chat search, project notes, second opinion, plan before building, parallel agents, earlier answers, lean code, the symbol index, MCP, skills, skills.sh and find in conversation are now mods: turn off what you don't use in Settings › Mods. Every mod, these and the LLM ones, comes from the JayV mods repository, which also brings ready-made mods to install, like Ollama and LM Studio."
+        },
+        {
+          "kind": "feature",
+          "id": "modsOnSite",
+          "title": "Create mods on the site",
+          "detail": "Creating a mod moved to the site: Create mod opens Dashboard › Mods, where you create, edit and delete your mods in each environment. They reach the app through sync, and the API key is still entered only on this computer."
+        }
+      ]
+    },
     {
       "version": "0.93.0",
       "date": "2026-10-10",
