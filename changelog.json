@@ -1,6 +1,18 @@
 {
-  "version": "0.94.0",
+  "version": "0.95.0",
   "releases": [
+    {
+      "version": "0.95.0",
+      "date": "2026-10-12",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "genericMods",
+          "title": "Mods for everything",
+          "detail": "Settings › Mods is now a mod manager, like in games: each mod has a version and an author, brings LLM engines, features or agents — or several at once —, may need other mods, and you install, turn on, turn off and uninstall it. Everything that was a mod came installed and on with your account; what you uninstall doesn't come back on its own, and your choices follow the environment to your other computers and to the site."
+        }
+      ]
+    },
     {
       "version": "0.94.0",
       "date": "2026-10-11",
