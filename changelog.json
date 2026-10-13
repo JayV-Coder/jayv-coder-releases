@@ -1,6 +1,24 @@
 {
-  "version": "0.96.0",
+  "version": "0.97.0",
   "releases": [
+    {
+      "version": "0.97.0",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "plansStripe",
+          "title": "Free, Pro and Enterprise plans in Stripe",
+          "detail": "Plans are created on the site (Administration › Plans) and sent to Stripe on their own as products, with the recurring price for the paid ones. A plan only goes on sale once it has been sent. The Plans page now has its page in the Documentation and its tutorial."
+        },
+        {
+          "kind": "feature",
+          "id": "modsDocs",
+          "title": "Mods have their own section in the Documentation",
+          "detail": "The mod pages left “Agents and models” and moved to the Mods section: the mod system is generic and not limited to agents."
+        }
+      ]
+    },
     {
       "version": "0.96.0",
       "date": "2026-10-13",
