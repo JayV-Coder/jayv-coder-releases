@@ -1,6 +1,18 @@
 {
-  "version": "0.95.0",
+  "version": "0.96.0",
   "releases": [
+    {
+      "version": "0.96.0",
+      "date": "2026-10-13",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "requiredMods",
+          "title": "Essential mods",
+          "detail": "The features of JayV are now essential mods: they always stay installed and on, and come back if they were turned off. The LLM engines (Claude Code, Codex, GitHub Copilot, Cursor, Kilo Code, OpenRouter, LiteLLM) and the agents Ollama and LM Studio can still be turned off and uninstalled in Settings › Mods. Your plan still decides which features you have."
+        }
+      ]
+    },
     {
       "version": "0.95.0",
       "date": "2026-10-12",
