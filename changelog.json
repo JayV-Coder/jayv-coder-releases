@@ -1,6 +1,18 @@
 {
-  "version": "0.100.0",
+  "version": "0.101.0",
   "releases": [
+    {
+      "version": "0.101.0",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "chatPermissionsOn",
+          "title": "Chat permissions the organization keeps always on",
+          "detail": "In the site's Permissions tab, each chat permission (run commands, Git, network) can now be Free, Always on or Blocked, and the box sits on the same screen as the blocked commands. In the app, an always-on one comes switched on and locked in every chat of the organization's project; a blocked one stays disabled."
+        }
+      ]
+    },
     {
       "version": "0.100.0",
       "date": "2026-10-14",
