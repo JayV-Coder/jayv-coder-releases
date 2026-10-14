@@ -1,6 +1,18 @@
 {
-  "version": "0.98.0",
+  "version": "0.98.1",
   "releases": [
+    {
+      "version": "0.98.1",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "featuresEditable",
+          "title": "The admin can turn any feature on or off, core ones included",
+          "detail": "The core features (gates, secret and sensitive-file protection, agent sessions, context cache and adaptive routing) are no longer locked: in Administration you turn them off for everyone or take them out of a plan, and the app follows the plan's list."
+        }
+      ]
+    },
     {
       "version": "0.98.0",
       "date": "2026-10-14",
