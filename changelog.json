@@ -1,6 +1,18 @@
 {
-  "version": "0.101.0",
+  "version": "0.101.1",
   "releases": [
+    {
+      "version": "0.101.1",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "policyBlameFix",
+          "title": "The organization is no longer blamed when no agent is on",
+          "detail": "A request in an organization project only says the organization's LLM policy left no allowed agent or model when the policy really switched one off. Otherwise it now says what is missing (no agent or model turned on in Settings)."
+        }
+      ]
+    },
     {
       "version": "0.101.0",
       "date": "2026-10-14",
