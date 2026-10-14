@@ -1,6 +1,18 @@
 {
-  "version": "0.101.3",
+  "version": "0.101.4",
   "releases": [
+    {
+      "version": "0.101.4",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "autoPlanContinues",
+          "title": "Auto mode now plans and then builds",
+          "detail": "In Auto, when a plan for something you asked to implement ends with no open question, Jev approves it and moves the chat to Development. If the plan asks questions, your answers move it to Development instead of producing another plan. Planning stays read-only when you pin it."
+        }
+      ]
+    },
     {
       "version": "0.101.3",
       "date": "2026-10-14",
