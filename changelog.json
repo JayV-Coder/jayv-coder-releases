@@ -1,6 +1,18 @@
 {
-  "version": "0.97.0",
+  "version": "0.98.0",
   "releases": [
+    {
+      "version": "0.98.0",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "plansCurrencies",
+          "title": "Plan prices in several currencies and by country",
+          "detail": "A paid plan can have prices in dollar, euro, pound, real and more, each with the countries it applies to. On the site (Administration › Plans) you add the currencies and the plan goes to Stripe with all of them; in Plans, the page opens in the currency of your country and you can switch it, and the payment is charged in the one you pick."
+        }
+      ]
+    },
     {
       "version": "0.97.0",
       "date": "2026-10-14",
