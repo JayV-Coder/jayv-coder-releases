@@ -1,6 +1,30 @@
 {
-  "version": "0.101.1",
+  "version": "0.101.3",
   "releases": [
+    {
+      "version": "0.101.3",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "chatPermissionsCommandsOn",
+          "title": "Commands covered by an always-on permission show as ticked",
+          "detail": "When the organization keeps Run commands, Git or Network always on, the specific-commands list ticks and locks the commands that permission covers, labelled \"Always on by <organization>\"."
+        }
+      ]
+    },
+    {
+      "version": "0.101.2",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "modelsOffHint",
+          "title": "Turning on an agent without any model now says so",
+          "detail": "An agent that is on with every model off shows a notice in its Models list, and the request failure names those agents and says to turn on a model. Load from the CLI also works with unsaved changes now: it merges the list into your draft instead of staying disabled."
+        }
+      ]
+    },
     {
       "version": "0.101.1",
       "date": "2026-10-14",
