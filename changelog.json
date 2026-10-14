@@ -1,6 +1,18 @@
 {
-  "version": "0.98.1",
+  "version": "0.99.0",
   "releases": [
+    {
+      "version": "0.99.0",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "adminAllFeatures",
+          "title": "System admins get every feature",
+          "detail": "Anyone who is a system admin uses every feature, on any plan and even those turned off in Administration; their toggles stay free."
+        }
+      ]
+    },
     {
       "version": "0.98.1",
       "date": "2026-10-14",
