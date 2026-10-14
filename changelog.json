@@ -1,6 +1,18 @@
 {
-  "version": "0.99.0",
+  "version": "0.100.0",
   "releases": [
+    {
+      "version": "0.100.0",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "chatPermissions",
+          "title": "Chat permissions of the organization",
+          "detail": "Owners and maintainers choose in the site's new Chat tab which chat permissions (run commands, write to Git, use the network) people may switch on in the organization's projects. In the app, a blocked permission shows disabled in Permissions as \"Blocked by <organization>\" and the agent is never given it."
+        }
+      ]
+    },
     {
       "version": "0.99.0",
       "date": "2026-10-14",

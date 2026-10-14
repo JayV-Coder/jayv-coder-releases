@@ -1,6 +1,6 @@
 {
-  "version": "0.99.0",
-  "updatedAt": "2026-10-14T17:00:22.718Z",
+  "version": "0.100.0",
+  "updatedAt": "2026-10-14T18:39:17.060Z",
   "categories": [
     "start",
     "chat",
@@ -54,6 +54,7 @@
     "orgChat",
     "orgExtensions",
     "commandPermissions",
+    "chatPermissions",
     "profilePhoto",
     "twoFactor",
     "plans",
