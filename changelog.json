@@ -1,6 +1,18 @@
 {
-  "version": "0.101.4",
+  "version": "0.102.0",
   "releases": [
+    {
+      "version": "0.102.0",
+      "date": "2026-10-14",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "limitResume",
+          "title": "Requests resume when the usage limit comes back",
+          "detail": "When an agent reaches its usage limit and no other agent can take the request, the request no longer just fails: JayV reads when the agent says the limit comes back, keeps the request and sends it again by itself at that time, even if the app was closed in between. The chat shows the wait with the time, and lets you resume now or stop waiting. Settings › Jev has a switch to turn it off."
+        }
+      ]
+    },
     {
       "version": "0.101.4",
       "date": "2026-10-14",

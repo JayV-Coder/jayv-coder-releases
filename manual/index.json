@@ -1,6 +1,6 @@
 {
-  "version": "0.101.4",
-  "updatedAt": "2026-10-14T21:24:43.258Z",
+  "version": "0.102.0",
+  "updatedAt": "2026-10-15T03:03:33.476Z",
   "categories": [
     "start",
     "chat",
@@ -29,6 +29,7 @@
     "adaptiveRouting",
     "agentSessions",
     "consumptionGuard",
+    "limitResume",
     "mcp",
     "skills",
     "skillsHub",
