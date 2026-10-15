@@ -1,6 +1,24 @@
 {
-  "version": "0.102.0",
+  "version": "0.103.0",
   "releases": [
+    {
+      "version": "0.103.0",
+      "date": "2026-10-15",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "reaSkill",
+          "title": "REA: reverse engineering, picked by Jev",
+          "detail": "Mods can now bring skills that Jev picks by the request. The first is REA: when you ask how an app, a binary, an .asar file, a website or a process works without its source code, Jev hands the request to REA, and only then does the agent receive the tools of REA (an MCP server run with npx; it needs Node.js 22.19 or newer). It comes installed and on, and you can turn it off or uninstall it in Settings › Mods. For an agent to use the tools of REA, turn on Approve MCP servers in its tab."
+        },
+        {
+          "kind": "feature",
+          "id": "modPages",
+          "title": "Every mod has its own page on the site",
+          "detail": "On the site, Mods lists every mod by category, with search, and each one has a page with what it does, how to turn it on and how to use it, with screenshots of the app in your language. In Settings › Mods, the book button of each mod opens its page (also Ctrl+K › Mod page on the site)."
+        }
+      ]
+    },
     {
       "version": "0.102.0",
       "date": "2026-10-14",
