@@ -1,6 +1,54 @@
 {
-  "version": "0.104.1",
+  "version": "0.104.2",
   "releases": [
+    {
+      "version": "0.104.2",
+      "date": "2026-10-16",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "syncRefresh",
+          "title": "What syncs shows up by itself",
+          "detail": "What another computer or the site wrote (projects, chats, answers, settings, mods) only appeared after something else reloaded the screen. On a new computer, the project list stayed empty after signing in. Now the screen reloads by itself when the sync brings something new."
+        },
+        {
+          "kind": "fix",
+          "id": "syncedHistoryQuiet",
+          "title": "No flood of notifications on a new computer",
+          "detail": "When a new computer downloaded the history, every past answer became a notification at once. Now only the requests made on this computer notify; what arrives from another computer through sync does not."
+        },
+        {
+          "kind": "fix",
+          "id": "answerNoBlank",
+          "title": "An answer no longer blanks the window",
+          "detail": "An answer with a link whose address had a loose % sign (like docs/100%.md) left the whole window blank, every time the chat opened. Now the link shows normally. And if a screen still fails to draw, it shows what went wrong and a Try again button, with the rest of the app still working."
+        },
+        {
+          "kind": "fix",
+          "id": "orgChatClones",
+          "title": "General chat counts every clone in the folder",
+          "detail": "Before the first general chat, the window that lists what the chat sees counted only the repositories that are projects on this computer: one cloned in the folder by the terminal showed as \"not on this computer\". Now every clone found inside the organization folder counts."
+        },
+        {
+          "kind": "fix",
+          "id": "modsKeepRemote",
+          "title": "Saving mods keeps what changed elsewhere",
+          "detail": "With unsaved changes in Settings › Mods, a mod that another computer or the site installed in the meantime was uninstalled when you saved. Now saving applies only what you changed in the tab."
+        },
+        {
+          "kind": "fix",
+          "id": "mcpDraftNoWait",
+          "title": "/mcp no longer waits for the running request",
+          "detail": "Drafting an MCP server with /mcp waited for the request running in another chat to finish, minutes sometimes. Now the draft comes right away."
+        },
+        {
+          "kind": "fix",
+          "id": "editorNoFreeze",
+          "title": "Following the agent in the editor does not freeze the window",
+          "detail": "Opening a changed file in VS Code or Cursor from the Code panel could freeze the window for a moment while git read the folder. Now it opens without holding the window."
+        }
+      ]
+    },
     {
       "version": "0.104.1",
       "date": "2026-10-15",
