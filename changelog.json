@@ -1,6 +1,18 @@
 {
-  "version": "0.105.0",
+  "version": "0.106.0",
   "releases": [
+    {
+      "version": "0.106.0",
+      "date": "2026-10-16",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "installFromSite",
+          "title": "Mods install from the site",
+          "detail": "Settings › Mods no longer lists the catalog. Open the mod's page on the site, signed in, and click Install in JayV: the site saves it in your account and the app syncs right away, so the mod shows up in Installed. An uninstall waits in the list, with Undo, until you save."
+        }
+      ]
+    },
     {
       "version": "0.105.0",
       "date": "2026-10-16",
