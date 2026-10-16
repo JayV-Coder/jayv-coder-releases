@@ -1,6 +1,42 @@
 {
-  "version": "0.103.0",
+  "version": "0.104.0",
   "releases": [
+    {
+      "version": "0.104.0",
+      "date": "2026-10-15",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "codePanel",
+          "title": "The Live panel became Code, with the repositories",
+          "detail": "The Live button in the chat header is now Code, and its panel has two tabs: Files, with what the agent changes in the request and the diff of each file, and Repositories, with the git status of each repository in the chat's folder (they left the left side of the organization chat and now show in every chat with a folder). JayV now finds git outside the short PATH of an app opened from the menu, shows the repository around a folder that is inside one, matches the organization's repositories by any remote, and says why git did not answer: git not found, a folder git does not trust (with the command to allow it) or the message of git. The tab reads the repositories as soon as it opens, even while a request is running."
+        },
+        {
+          "kind": "feature",
+          "id": "chatsMenu",
+          "title": "General chats in the Chats item of the side menu",
+          "detail": "In an organization's environment, the General chats column is gone: its chats are now in the Chats item of the side menu, which opens and closes the list (newest first, with + to start another). The side menu is also wider."
+        },
+        {
+          "kind": "feature",
+          "id": "modIcons",
+          "title": "Every mod has its icon",
+          "detail": "Each mod of the catalog now brings its own icon, shown in Settings › Mods, in the tabs of the agents (Ollama and LM Studio included) and on the site."
+        },
+        {
+          "kind": "feature",
+          "id": "modDefaults",
+          "title": "Fewer mods installed by default",
+          "detail": "When you sign in for the first time, only the essential mods and Claude Code, Codex and Ollama come installed. GitHub Copilot, Cursor, Kilo Code, OpenRouter, LiteLLM, LM Studio and REA wait in Settings › Mods › Available in the catalog for whoever wants them. The mods you already have stay as they are."
+        },
+        {
+          "kind": "fix",
+          "id": "whatsNewAfterUpdate",
+          "title": "What's new waits for the update",
+          "detail": "The What's new window no longer opens over the screen that looks for updates or over the update window: it waits for them to close."
+        }
+      ]
+    },
     {
       "version": "0.103.0",
       "date": "2026-10-15",
