@@ -1,6 +1,24 @@
 {
-  "version": "0.104.2",
+  "version": "0.105.0",
   "releases": [
+    {
+      "version": "0.105.0",
+      "date": "2026-10-16",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "onlyEssentials",
+          "title": "Only the essential mods come installed",
+          "detail": "In a new environment, only the essential mods install themselves. Claude Code, Codex, Ollama and the other LLM engines and agents wait in Settings › Mods › Available in the catalog: install the ones you use. What you already have installed stays as it is, and a request without any agent mod says what to install."
+        },
+        {
+          "kind": "feature",
+          "id": "essentialsTab",
+          "title": "Essential mods in their own tab",
+          "detail": "In Settings › Mods, the installed mods are in two tabs, each with its count: Installed, with the mods you chose, and Essentials, with the ones JayV keeps installed and on. Ctrl+K opens either one."
+        }
+      ]
+    },
     {
       "version": "0.104.2",
       "date": "2026-10-16",
