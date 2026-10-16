@@ -1,6 +1,54 @@
 {
-  "version": "0.104.0",
+  "version": "0.104.1",
   "releases": [
+    {
+      "version": "0.104.1",
+      "date": "2026-10-15",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "planRefusal",
+          "title": "Refusing a plan no longer approves it",
+          "detail": "With a plan waiting in the chat, a message that refused it or asked to change it (\"I don't approve\", \"the plan is wrong, redo it\", \"don't implement it yet\") was read as approval, and in Auto the chat went to Development to build the plan you had refused. Now a refusal, a negation or a request for another plan does not approve it: Jev reads the message as a new request."
+        },
+        {
+          "kind": "fix",
+          "id": "lateQuestion",
+          "title": "Late questions no longer lock the message box",
+          "detail": "Jev reads each answer to find its question a few seconds after it arrives. If you had already sent another message in the meantime, the old question locked the message box over the conversation, and in Auto a plan with no question went to Development by itself, on top of what you had sent. Now the answer's question and that automatic step only happen while nothing else was sent after it."
+        },
+        {
+          "kind": "fix",
+          "id": "modeKept",
+          "title": "The mode you pick during a request stays",
+          "detail": "When Jev switched a chat to Development during a request and you picked another mode while it ran, the end of the request put Development back over your choice. Now your choice stays."
+        },
+        {
+          "kind": "fix",
+          "id": "clearStops",
+          "title": "Clearing a chat stops its request",
+          "detail": "Clearing or deleting a chat while its request ran left the agent working unseen, and in the cleared chat its answer showed up alone, without the request. A pending question stayed locking the message box, and a request waiting for the usage limit came back empty. Now clearing or deleting stops the request, closes the question and drops the wait, and nothing from the old conversation reaches the cleared chat."
+        },
+        {
+          "kind": "fix",
+          "id": "retryNote",
+          "title": "\"It didn't work\" counts only for its own request",
+          "detail": "When the gatehouse held or asked about a message like \"it still fails\", the next request served after it — even in another chat — reached the agent with the note that the previous attempt had failed. Now the note goes only with the request that complained, or with its confirmation."
+        },
+        {
+          "kind": "fix",
+          "id": "nestedFolders",
+          "title": "An organization's general chat and its repositories take turns",
+          "detail": "With more than one request at a time in your plan, a general chat of an organization (which works in the organization's folder) and a project of one of its repositories (in a folder inside it) could run together, with two agents writing to the same repository. Now a project whose folder is inside another's waits for it, like requests of the same project."
+        },
+        {
+          "kind": "fix",
+          "id": "stopUnstuck",
+          "title": "Stop no longer gets stuck",
+          "detail": "If stopping a request was refused (an expired session, for example), the Stop button stayed disabled as \"Stopping…\". Now it comes back so you can try again."
+        }
+      ]
+    },
     {
       "version": "0.104.0",
       "date": "2026-10-15",
