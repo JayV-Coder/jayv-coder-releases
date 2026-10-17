@@ -1,6 +1,18 @@
 {
-  "version": "0.106.1",
+  "version": "0.107.0",
   "releases": [
+    {
+      "version": "0.107.0",
+      "date": "2026-10-17",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "builtInJev",
+          "title": "Four Jev options are built into paid plans",
+          "detail": "On Pro, Enterprise and for system admins, keeping the chat on the session's model, resuming after the usage limit and one session across planning and build are always on, and Jev now sets each request's time limit by itself. These options no longer have a switch."
+        }
+      ]
+    },
     {
       "version": "0.106.1",
       "date": "2026-10-16",

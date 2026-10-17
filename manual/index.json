@@ -1,6 +1,6 @@
 {
-  "version": "0.106.1",
-  "updatedAt": "2026-10-17T02:30:07.062Z",
+  "version": "0.107.0",
+  "updatedAt": "2026-10-17T15:56:51.460Z",
   "categories": [
     "start",
     "chat",
@@ -30,6 +30,9 @@
     "agentSessions",
     "consumptionGuard",
     "limitResume",
+    "keepSessionModel",
+    "planBuildSession",
+    "autoTurnCeiling",
     "mcp",
     "skills",
     "skillsHub",
