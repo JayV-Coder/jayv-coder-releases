@@ -1,6 +1,30 @@
 {
-  "version": "0.107.0",
+  "version": "0.108.0",
   "releases": [
+    {
+      "version": "0.108.0",
+      "date": "2026-10-25",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "newAgentMods",
+          "title": "Ten new agent mods",
+          "detail": "Google Gemini, DeepSeek, Perplexity, Manus, Meta AI, Kimi Code, OpenCode, Aider, OpenHands and Devin are in the mod catalog. Install them from their pages on the site."
+        },
+        {
+          "kind": "feature",
+          "id": "acpAgents",
+          "title": "Agents that speak ACP",
+          "detail": "Mods can bring agents that speak the Agent Client Protocol. The app picks their model and mode, gives them your MCP servers and answers each permission they ask for; in Planning mode, only reading is allowed."
+        },
+        {
+          "kind": "feature",
+          "id": "apiProtocols",
+          "title": "More API formats",
+          "detail": "API mods can also use the OpenAI Responses API and Manus tasks, and command-line mods can receive the request in a file."
+        }
+      ]
+    },
     {
       "version": "0.107.0",
       "date": "2026-10-17",
