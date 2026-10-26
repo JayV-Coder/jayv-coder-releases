@@ -1,6 +1,30 @@
 {
-  "version": "0.108.0",
+  "version": "0.109.0",
   "releases": [
+    {
+      "version": "0.109.0",
+      "date": "2026-10-26",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "buildValidation",
+          "title": "Builds are validated",
+          "detail": "After a development request, Jev runs the project's tests, lint, typecheck and build and shows each step with its command. If one fails, it sends the failure back to the agent, up to two times. A project with no test shows \"no test defined\", never \"passed\". Turn it on in Settings › Jev."
+        },
+        {
+          "kind": "feature",
+          "id": "buildCheckpoint",
+          "title": "Go back to before a build",
+          "detail": "Jev saves the folder before each development request. One click on the latest build's answer (or Ctrl+K) returns the files to how they were."
+        },
+        {
+          "kind": "feature",
+          "id": "orgValidation",
+          "title": "Organizations can require validation",
+          "detail": "Owners and maintainers can require the build validator on the site and hold commits until it passes."
+        }
+      ]
+    },
     {
       "version": "0.108.0",
       "date": "2026-10-25",

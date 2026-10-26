@@ -1,6 +1,6 @@
 {
-  "version": "0.108.0",
-  "updatedAt": "2026-10-25T14:42:57.148Z",
+  "version": "0.109.0",
+  "updatedAt": "2026-10-26T03:36:44.731Z",
   "categories": [
     "start",
     "chat",
@@ -30,6 +30,8 @@
     "adaptiveRouting",
     "agentSessions",
     "consumptionGuard",
+    "buildValidation",
+    "buildCheckpoint",
     "limitResume",
     "keepSessionModel",
     "planBuildSession",
@@ -60,6 +62,7 @@
     "orgExtensions",
     "commandPermissions",
     "chatPermissions",
+    "orgValidation",
     "profilePhoto",
     "twoFactor",
     "plans",
