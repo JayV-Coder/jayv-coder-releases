@@ -1,6 +1,90 @@
 {
-  "version": "0.109.0",
+  "version": "0.111.0",
   "releases": [
+    {
+      "version": "0.111.0",
+      "date": "2026-10-27",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "firstSteps",
+          "title": "First steps",
+          "detail": "A new install shows three steps on the Projects page, from adding a folder to the first request whose tests pass; validation turns on with one click."
+        },
+        {
+          "kind": "feature",
+          "id": "ciRun",
+          "title": "JayV in CI",
+          "detail": "jayv run --validate runs a request with the gate and the validator, exits with a code a pipeline understands and writes the pull request summary. The manual has a GitHub Actions example."
+        },
+        {
+          "kind": "feature",
+          "id": "auditLog",
+          "title": "Organization audit log",
+          "detail": "On the site, owners and maintainers download who asked for what, with agent, model, commands and result, as CSV or JSON for a period of up to a year."
+        },
+        {
+          "kind": "feature",
+          "id": "memberAccess",
+          "title": "What a member can do",
+          "detail": "A new Access tab on the site shows, for any member, the role, plan, LLM policy, chat permissions, commands and validation, each with the rule that decides it."
+        },
+        {
+          "kind": "feature",
+          "id": "securityPage",
+          "title": "Security page",
+          "detail": "The site now lists the controls in place, who processes data and the plan toward SOC 2."
+        }
+      ]
+    },
+    {
+      "version": "0.110.0",
+      "date": "2026-10-27",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "taskOutcomes",
+          "title": "Results per task",
+          "detail": "Statistics now shows turns per goal, tasks the validator proved, and tokens and money per verified task."
+        },
+        {
+          "kind": "feature",
+          "id": "modelPrices",
+          "title": "Cost in money",
+          "detail": "A price table per model, edited on the site, estimates the money of calls whose tool reported no cost."
+        },
+        {
+          "kind": "feature",
+          "id": "savingsBaseline",
+          "title": "Savings only with a baseline",
+          "detail": "Tokens avoided by the Jev show only after 20 reported answers, with a clear definition of how they are counted."
+        },
+        {
+          "kind": "feature",
+          "id": "teamUsage",
+          "title": "Team usage by week",
+          "detail": "On the site, owners and maintainers see the organization's requests, verified tasks and cost per week, and per member."
+        },
+        {
+          "kind": "feature",
+          "id": "jevDailyRequests",
+          "title": "Daily Jev requests",
+          "detail": "The plan's Jev cap now counts requests, not calls. Free has 20 a day; after that, local rules take over until midnight UTC without blocking you."
+        },
+        {
+          "kind": "feature",
+          "id": "featureTelemetry",
+          "title": "Optional feature usage",
+          "detail": "If you agree in Settings › App › Privacy, the app sends how often each feature is opened, with no text or names. Off by default."
+        },
+        {
+          "kind": "feature",
+          "id": "benchValidator",
+          "title": "Bench checks with the validator",
+          "detail": "In jayv bench, a task without a verify command is now judged by the build validator: it is done only when the tests pass."
+        }
+      ]
+    },
     {
       "version": "0.109.0",
       "date": "2026-10-26",
