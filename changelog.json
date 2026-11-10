@@ -1,6 +1,42 @@
 {
-  "version": "0.111.0",
+  "version": "0.111.3",
   "releases": [
+    {
+      "version": "0.111.3",
+      "date": "2026-11-10",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "gateFollowUp",
+          "title": "Stricter follow-up detection",
+          "detail": "A new short request that merely mentions \"this\" or \"it\" is now scored by the entry gate instead of inheriting the previous result."
+        }
+      ]
+    },
+    {
+      "version": "0.111.2",
+      "date": "2026-11-10",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "ceilingFirstRequest",
+          "title": "Time limit on the first request",
+          "detail": "The first request after opening the app now uses your plan and organization time limit instead of the 30 minute default."
+        }
+      ]
+    },
+    {
+      "version": "0.111.1",
+      "date": "2026-11-10",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "whyLeftover",
+          "title": "Next request after /why",
+          "detail": "The request that follows a /why now goes to the agent exactly as typed."
+        }
+      ]
+    },
     {
       "version": "0.111.0",
       "date": "2026-10-27",
