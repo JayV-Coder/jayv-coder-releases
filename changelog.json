@@ -1,6 +1,30 @@
 {
-  "version": "0.111.3",
+  "version": "0.113.0",
   "releases": [
+    {
+      "version": "0.113.0",
+      "date": "2026-11-13",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "levelAuto",
+          "title": "Your level adjusts itself",
+          "detail": "The entry gate learns with you: after enough requests the Jev moves your level one step up or down, tells you in the chat and lets you undo it."
+        }
+      ]
+    },
+    {
+      "version": "0.112.0",
+      "date": "2026-11-13",
+      "items": [
+        {
+          "kind": "feature",
+          "id": "resumeModesDefault",
+          "title": "Session kept from plan to build",
+          "detail": "The agent session now carries over when a chat goes from planning to building, so it does not reread the project. You can turn it off in Settings › Jev."
+        }
+      ]
+    },
     {
       "version": "0.111.3",
       "date": "2026-11-10",

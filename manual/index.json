@@ -1,6 +1,6 @@
 {
-  "version": "0.111.3",
-  "updatedAt": "2026-11-10T02:50:45.235Z",
+  "version": "0.113.0",
+  "updatedAt": "2026-11-13T15:21:46.817Z",
   "categories": [
     "start",
     "chat",
@@ -47,6 +47,7 @@
     "planFirst",
     "parallelTasks",
     "entryGate",
+    "levelAuto",
     "exitGate",
     "savingsBaseline",
     "gateBoard",
