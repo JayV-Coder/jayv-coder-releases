@@ -1,6 +1,18 @@
 {
-  "version": "0.113.0",
+  "version": "0.113.1",
   "releases": [
+    {
+      "version": "0.113.1",
+      "date": "2026-11-16",
+      "items": [
+        {
+          "kind": "fix",
+          "id": "coderSchema",
+          "title": "Sync uses the app's own data area",
+          "detail": "Chats, projects and usage now sync through the data area reserved for the app, so the account data shared with other apps stays separate. Nothing changes in what you see."
+        }
+      ]
+    },
     {
       "version": "0.113.0",
       "date": "2026-11-13",
